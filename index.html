@@ -1,3194 +1,2603 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <meta charset="UTF-8">
+    <meta
+        name="description"
+        content="Mundo Liquidación de Obras: consultoría, peritajes, tasaciones, liquidación de obras, valorizaciones, supervisión y asesoría técnica especializada."
+    >
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <meta
+        name="keywords"
+        content="liquidación de obras, liquidación de obra, peritajes, tasaciones, valorizaciones, obras públicas, contratación pública, construcción, consultoría técnica, Perú"
+    >
 
-  <meta
-    name="description"
-    content="Mundo Liquidación de Obras - Consultoría especializada en liquidación de obras, peritajes técnicos, tasaciones, contratación pública y asesoría en obras."
-  >
+    <meta name="author" content="Mundo Liquidación de Obras">
 
-  <meta
-    name="keywords"
-    content="liquidación de obras, obras públicas, contratación pública, peritajes, tasaciones, reajustes, valorizaciones, Ley 32069, Ley 30225"
-  >
+    <meta
+        property="og:title"
+        content="Mundo Liquidación de Obras | Consultoría, Peritajes y Tasaciones"
+    >
 
-  <meta
-    name="author"
-    content="Mundo Liquidación de Obras"
-  >
+    <meta
+        property="og:description"
+        content="Conocimiento técnico que genera confianza."
+    >
 
-  <title>
-    Mundo Liquidación de Obras | Consultoría y Peritajes
-  </title>
+    <meta
+        property="og:type"
+        content="website"
+    >
 
+    <title>
+        Mundo Liquidación de Obras | Consultoría, Peritajes y Tasaciones
+    </title>
 
-  <!-- =====================================================
-       FUENTES
-  ====================================================== -->
+    <style>
 
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
+        /* =========================================================
+           VARIABLES
+        ========================================================= */
 
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-  >
+        :root {
+            --azul-principal: #0b3c5d;
+            --azul-oscuro: #07253a;
+            --azul-claro: #eaf3f8;
+            --azul-medio: #145579;
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+            --naranja: #f39c12;
+            --naranja-hover: #d98200;
 
+            --blanco: #ffffff;
+            --gris-claro: #f4f7f9;
+            --gris: #e5e7eb;
+            --gris-medio: #6b7280;
+            --texto: #263238;
 
-  <style>
+            --verde: #16a34a;
+            --rojo: #dc2626;
 
-    /* =====================================================
-       VARIABLES
-    ===================================================== */
+            --sombra:
+                0 10px 30px rgba(7, 37, 58, 0.10);
 
-    :root {
+            --sombra-hover:
+                0 18px 40px rgba(7, 37, 58, 0.16);
 
-      --azul-principal: #0b3c5d;
+            --radio: 16px;
+            --transicion: 0.25s ease;
+        }
 
-      --azul-oscuro: #062b43;
 
-      --azul-medio: #214d68;
+        /* =========================================================
+           RESET
+        ========================================================= */
 
-      --azul-claro: #edf3f7;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      --naranja: #f39c12;
 
-      --naranja-hover: #df8905;
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
 
-      --blanco: #ffffff;
 
-      --gris-fondo: #f4f6f9;
+        body {
+            font-family:
+                "Segoe UI",
+                Arial,
+                Helvetica,
+                sans-serif;
 
-      --gris-claro: #e9eef3;
+            background: var(--gris-claro);
+            color: var(--texto);
+            line-height: 1.6;
+        }
 
-      --gris-texto: #666666;
 
-      --texto: #333333;
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
-      --verde-whatsapp: #25d366;
 
-      --sombra:
-        0 8px 25px rgba(7, 43, 67, 0.10);
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
 
-      --sombra-fuerte:
-        0 15px 35px rgba(7, 43, 67, 0.16);
 
-    }
+        button,
+        input,
+        select {
+            font: inherit;
+        }
 
 
-    /* =====================================================
-       RESET
-    ===================================================== */
+        button {
+            cursor: pointer;
+        }
 
-    * {
 
-      margin: 0;
+        .container {
+            width: min(1180px, 92%);
+            margin: 0 auto;
+        }
 
-      padding: 0;
 
-      box-sizing: border-box;
+        /* =========================================================
+           HEADER
+        ========================================================= */
 
-    }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
 
+            background: var(--azul-principal);
+            color: var(--blanco);
 
-    html {
+            box-shadow:
+                0 3px 15px rgba(0, 0, 0, 0.12);
+        }
 
-      scroll-behavior: smooth;
 
-      scroll-padding-top: 85px;
+        .navbar {
+            min-height: 78px;
 
-    }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
+            gap: 30px;
+        }
 
-    body {
 
-      font-family:
-        "Poppins",
-        Arial,
-        sans-serif;
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
 
-      color:
-        var(--texto);
+            min-width: 0;
+        }
 
-      background:
-        var(--gris-fondo);
 
-      line-height:
-        1.7;
+        .brand-logo {
+            width: 58px;
+            height: 58px;
 
-      overflow-x:
-        hidden;
+            object-fit: contain;
 
-    }
+            background: var(--blanco);
+            border-radius: 10px;
 
+            padding: 4px;
+        }
 
-    a {
 
-      color:
-        inherit;
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
 
-      text-decoration:
-        none;
 
-    }
+        .brand-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            letter-spacing: 0.3px;
+        }
 
 
-    img {
+        .brand-subtitle {
+            color: var(--naranja);
+            font-size: 0.72rem;
+            font-weight: 600;
+        }
 
-      max-width:
-        100%;
 
-      display:
-        block;
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 25px;
 
-    }
+            list-style: none;
+        }
 
 
-    button {
+        .nav-menu a {
+            color: var(--blanco);
+            font-weight: 600;
+            font-size: 0.95rem;
 
-      font-family:
-        inherit;
+            transition:
+                color var(--transicion);
+        }
 
-    }
 
+        .nav-menu a:hover {
+            color: var(--naranja);
+        }
 
-    /* =====================================================
-       HEADER
-    ===================================================== */
 
-    header {
+        .nav-contacto {
+            background: var(--naranja);
+            color: #111 !important;
 
-      position:
-        sticky;
+            padding: 10px 22px;
+            border-radius: 30px;
 
-      top:
-        0;
+            font-weight: 800 !important;
+        }
 
-      z-index:
-        1000;
 
-      background:
-        var(--azul-principal);
+        .nav-contacto:hover {
+            background: var(--blanco);
+        }
 
-      box-shadow:
-        0 3px 15px rgba(0, 0, 0, 0.15);
 
-    }
+        .menu-toggle {
+            display: none;
 
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.4);
 
-    .navbar {
+            color: var(--blanco);
 
-      max-width:
-        1400px;
+            padding: 8px 12px;
+            border-radius: 8px;
 
-      min-height:
-        78px;
+            font-size: 1.4rem;
+        }
 
-      margin:
-        auto;
 
-      padding:
-        10px 40px;
+        /* =========================================================
+           HERO
+        ========================================================= */
 
-      display:
-        flex;
+        .hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--azul-principal),
+                    var(--azul-oscuro)
+                );
 
-      align-items:
-        center;
+            color: var(--blanco);
 
-      justify-content:
-        space-between;
+            padding:
+                100px
+                0
+                95px;
 
-      gap:
-        30px;
+            position: relative;
+            overflow: hidden;
+        }
 
-    }
 
+        .hero::after {
+            content: "";
 
-    .logo-area {
+            position: absolute;
 
-      display:
-        flex;
+            width: 400px;
+            height: 400px;
 
-      align-items:
-        center;
+            border-radius: 50%;
 
-      gap:
-        14px;
+            background:
+                rgba(243, 156, 18, 0.08);
 
-      min-width:
-        0;
+            right: -150px;
+            top: -150px;
+        }
 
-    }
 
+        .hero-content {
+            position: relative;
+            z-index: 2;
 
-    .logo {
+            max-width: 780px;
+        }
 
-      width:
-        58px;
 
-      height:
-        58px;
+        .hero-badge {
+            display: inline-block;
 
-      object-fit:
-        contain;
+            color: var(--naranja);
 
-      background:
-        white;
+            border:
+                1px solid
+                rgba(243,156,18,0.5);
 
-      border-radius:
-        8px;
+            padding: 7px 16px;
 
-      padding:
-        4px;
+            border-radius: 30px;
 
-      flex-shrink:
-        0;
+            font-size: 0.85rem;
+            font-weight: 700;
 
-    }
+            margin-bottom: 20px;
+        }
 
 
-    .brand {
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
 
-      min-width:
-        0;
+            line-height: 1.1;
 
-    }
+            margin-bottom: 22px;
+        }
 
 
-    .brand h1 {
+        .hero p {
+            font-size: 1.15rem;
 
-      color:
-        white;
+            max-width: 700px;
 
-      font-size:
-        20px;
+            color:
+                rgba(255,255,255,0.88);
 
-      font-weight:
-        800;
+            margin-bottom: 30px;
+        }
 
-      line-height:
-        1.2;
 
-      white-space:
-        nowrap;
+        .btn {
+            display: inline-flex;
 
-    }
+            align-items: center;
+            justify-content: center;
 
+            gap: 8px;
 
-    .brand p {
+            padding: 13px 26px;
 
-      color:
-        var(--naranja);
+            border-radius: 30px;
 
-      font-size:
-        11px;
+            border: none;
 
-      font-weight:
-        500;
+            font-weight: 700;
 
-      margin-top:
-        3px;
+            transition:
+                transform var(--transicion),
+                background var(--transicion);
+        }
 
-    }
 
+        .btn:hover {
+            transform: translateY(-2px);
+        }
 
-    .nav-menu {
 
-      display:
-        flex;
+        .btn-primary {
+            background: var(--naranja);
+            color: #111;
+        }
 
-      align-items:
-        center;
 
-      gap:
-        24px;
+        .btn-primary:hover {
+            background: var(--naranja-hover);
+        }
 
-      list-style:
-        none;
 
-    }
+        .btn-secondary {
+            background: transparent;
 
+            color: var(--blanco);
 
-    .nav-menu a {
+            border:
+                1px solid
+                rgba(255,255,255,0.45);
 
-      color:
-        white;
+            margin-left: 10px;
+        }
 
-      font-size:
-        14px;
 
-      font-weight:
-        500;
+        .btn-secondary:hover {
+            background: var(--blanco);
+            color: var(--azul-principal);
+        }
 
-      transition:
-        0.3s;
 
-    }
+        /* =========================================================
+           SECCIONES
+        ========================================================= */
 
+        section {
+            padding: 85px 0;
+        }
 
-    .nav-menu a:hover {
 
-      color:
-        var(--naranja);
+        .section-header {
+            text-align: center;
 
-    }
+            max-width: 760px;
 
+            margin:
+                0
+                auto
+                45px;
+        }
 
-    .nav-contacto {
 
-      background:
-        var(--naranja);
+        .section-header h2 {
+            color: var(--azul-principal);
 
-      color:
-        #111 !important;
+            font-size:
+                clamp(1.8rem, 4vw, 2.7rem);
 
-      padding:
-        9px 22px;
+            margin-bottom: 12px;
+        }
 
-      border-radius:
-        30px;
 
-      font-weight:
-        700 !important;
+        .section-header p {
+            color: var(--gris-medio);
 
-    }
+            font-size: 1.05rem;
+        }
 
 
-    .nav-contacto:hover {
+        /* =========================================================
+           NOSOTROS
+        ========================================================= */
 
-      background:
-        var(--naranja-hover);
+        .about {
+            background: var(--blanco);
+        }
 
-      color:
-        #111 !important;
 
-    }
+        .about-grid {
+            display: grid;
 
+            grid-template-columns:
+                repeat(2, 1fr);
 
-    .menu-btn {
+            gap: 50px;
 
-      display:
-        none;
+            align-items: center;
+        }
 
-      border:
-        none;
 
-      background:
-        transparent;
+        .about-text h3 {
+            color: var(--azul-principal);
 
-      color:
-        white;
+            font-size: 1.8rem;
 
-      font-size:
-        28px;
+            margin-bottom: 18px;
+        }
 
-      cursor:
-        pointer;
 
-    }
+        .about-text p {
+            margin-bottom: 15px;
+        }
 
 
-    /* =====================================================
-       HERO
-    ===================================================== */
+        .about-box {
+            background:
+                var(--azul-claro);
 
-    .hero {
+            border-left:
+                5px solid
+                var(--naranja);
 
-      min-height:
-        500px;
+            padding: 28px;
 
-      display:
-        flex;
+            border-radius: 12px;
+        }
 
-      align-items:
-        center;
 
-      text-align:
-        center;
+        .about-box strong {
+            color: var(--azul-principal);
+        }
 
-      padding:
-        80px 20px;
 
-      color:
-        white;
+        /* =========================================================
+           SERVICIOS
+        ========================================================= */
 
-      background:
-        linear-gradient(
-          135deg,
-          var(--azul-medio),
-          var(--azul-principal)
-        );
+        .services {
+            background: var(--gris-claro);
+        }
 
-    }
 
+        .services-grid {
+            display: grid;
 
-    .hero-content {
+            grid-template-columns:
+                repeat(3, 1fr);
 
-      max-width:
-        1100px;
+            gap: 24px;
+        }
 
-      margin:
-        auto;
 
-    }
+        .service-card {
+            background: var(--blanco);
 
+            padding: 30px;
 
-    .hero h2 {
+            border-radius: var(--radio);
 
-      font-size:
-        clamp(30px, 4vw, 50px);
+            box-shadow: var(--sombra);
 
-      line-height:
-        1.25;
+            transition:
+                transform var(--transicion),
+                box-shadow var(--transicion);
+        }
 
-      font-weight:
-        800;
 
-      margin-bottom:
-        25px;
+        .service-card:hover {
+            transform: translateY(-6px);
 
-    }
+            box-shadow: var(--sombra-hover);
+        }
 
 
-    .hero-line {
+        .service-icon {
+            width: 54px;
+            height: 54px;
 
-      width:
-        80%;
+            display: flex;
 
-      max-width:
-        850px;
+            align-items: center;
+            justify-content: center;
 
-      height:
-        1px;
+            background: var(--azul-claro);
 
-      background:
-        rgba(255, 255, 255, 0.4);
+            color: var(--azul-principal);
 
-      margin:
-        0 auto 25px;
+            border-radius: 12px;
 
-    }
+            font-size: 1.5rem;
 
+            margin-bottom: 20px;
+        }
 
-    .hero p {
 
-      max-width:
-        850px;
+        .service-card h3 {
+            color: var(--azul-principal);
 
-      margin:
-        0 auto 30px;
+            margin-bottom: 10px;
+        }
 
-      color:
-        #f3f7fa;
 
-      font-size:
-        16px;
+        .service-card p {
+            color: var(--gris-medio);
+        }
 
-      line-height:
-        1.8;
 
-    }
+        /* =========================================================
+           BIBLIOTECA
+        ========================================================= */
 
+        .library {
+            background: var(--blanco);
+        }
 
-    .btn-principal {
 
-      display:
-        inline-flex;
+        .library-grid {
+            display: grid;
 
-      align-items:
-        center;
+            grid-template-columns:
+                repeat(3, 1fr);
 
-      justify-content:
-        center;
+            gap: 24px;
+        }
 
-      background:
-        var(--naranja);
 
-      color:
-        #111;
+        .library-card {
+            border:
+                1px solid
+                var(--gris);
 
-      padding:
-        14px 30px;
+            border-radius: var(--radio);
 
-      border-radius:
-        35px;
+            padding: 28px;
 
-      font-size:
-        15px;
+            transition:
+                border-color var(--transicion),
+                transform var(--transicion);
+        }
 
-      font-weight:
-        700;
 
-      transition:
-        0.3s;
+        .library-card:hover {
+            border-color: var(--naranja);
 
-      box-shadow:
-        0 8px 20px
-        rgba(243, 156, 18, 0.3);
+            transform: translateY(-4px);
+        }
 
-    }
 
+        .library-card h3 {
+            color: var(--azul-principal);
 
-    .btn-principal:hover {
+            margin-bottom: 10px;
+        }
 
-      background:
-        var(--naranja-hover);
 
-      transform:
-        translateY(-3px);
+        .library-card p {
+            color: var(--gris-medio);
 
-    }
+            margin-bottom: 15px;
+        }
 
 
-    /* =====================================================
-       SECCIONES
-    ===================================================== */
+        .library-link {
+            color: var(--azul-principal);
 
-    section {
+            font-weight: 700;
+        }
 
-      padding:
-        80px 20px;
 
-    }
+        /* =========================================================
+           NOTICIAS
+        ========================================================= */
 
+        #noticias {
+            background: var(--azul-claro);
+        }
 
-    .section-title {
 
-      max-width:
-        900px;
+        .news-controls {
+            background: var(--blanco);
 
-      margin:
-        0 auto 50px;
+            padding: 22px;
 
-      text-align:
-        center;
+            border-radius: var(--radio);
 
-    }
+            box-shadow: var(--sombra);
 
+            margin-bottom: 35px;
 
-    .section-title h2 {
+            display: grid;
 
-      color:
-        var(--azul-principal);
+            grid-template-columns:
+                2fr
+                1fr;
 
-      font-size:
-        clamp(28px, 4vw, 38px);
+            gap: 15px;
+        }
 
-      font-weight:
-        800;
 
-      line-height:
-        1.3;
+        .news-controls input,
+        .news-controls select {
+            width: 100%;
 
-      margin-bottom:
-        12px;
+            padding: 13px 16px;
 
-    }
+            border:
+                1px solid
+                var(--gris);
 
+            border-radius: 10px;
 
-    .section-title p {
+            outline: none;
 
-      color:
-        var(--gris-texto);
+            background: var(--blanco);
+        }
 
-      font-size:
-        16px;
 
-    }
+        .news-controls input:focus,
+        .news-controls select:focus {
+            border-color:
+                var(--azul-principal);
 
+            box-shadow:
+                0 0 0 3px
+                rgba(11,60,93,0.1);
+        }
 
-    /* =====================================================
-       NOSOTROS
-    ===================================================== */
 
-    #nosotros {
+        .news-status {
+            text-align: center;
 
-      background:
-        var(--gris-fondo);
+            color: var(--gris-medio);
 
-    }
+            margin-bottom: 25px;
 
+            font-size: 0.9rem;
+        }
 
-    .nosotros-box {
 
-      max-width:
-        1100px;
+        .news-grid {
+            display: grid;
 
-      margin:
-        auto;
+            grid-template-columns:
+                repeat(3, 1fr);
 
-      padding:
-        45px;
+            gap: 25px;
+        }
 
-      background:
-        white;
 
-      border-radius:
-        12px;
+        .news-card {
+            background: var(--blanco);
 
-      box-shadow:
-        var(--sombra);
+            border-radius: var(--radio);
 
-      display:
-        grid;
+            overflow: hidden;
 
-      grid-template-columns:
-        1fr 1fr;
+            box-shadow: var(--sombra);
 
-      gap:
-        50px;
+            display: flex;
 
-    }
+            flex-direction: column;
 
+            transition:
+                transform var(--transicion),
+                box-shadow var(--transicion);
+        }
 
-    .nosotros-text h3 {
 
-      color:
-        var(--azul-principal);
+        .news-card:hover {
+            transform: translateY(-5px);
 
-      font-size:
-        23px;
+            box-shadow: var(--sombra-hover);
+        }
 
-      line-height:
-        1.5;
 
-      margin-bottom:
-        20px;
+        .news-card-header {
+            background:
+                var(--azul-principal);
 
-    }
+            color: var(--blanco);
 
+            padding: 18px 22px;
+        }
 
-    .nosotros-text p {
 
-      color:
-        #555;
+        .news-category {
+            display: inline-block;
 
-      font-size:
-        15px;
+            color: var(--naranja);
 
-      margin-bottom:
-        18px;
+            font-size: 0.75rem;
 
-    }
+            font-weight: 800;
 
+            text-transform: uppercase;
 
-    .mision-vision {
+            margin-bottom: 8px;
+        }
 
-      display:
-        flex;
 
-      flex-direction:
-        column;
+        .news-card-header h3 {
+            font-size: 1.15rem;
 
-      gap:
-        20px;
+            line-height: 1.35;
+        }
 
-    }
 
+        .news-card-body {
+            padding: 22px;
 
-    .info-card {
+            display: flex;
 
-      padding:
-        25px;
+            flex-direction: column;
 
-      background:
-        white;
+            flex: 1;
+        }
 
-      border-radius:
-        10px;
 
-      box-shadow:
-        0 5px 18px
-        rgba(0, 0, 0, 0.06);
+        .news-description {
+            color: var(--gris-medio);
 
-      border-left:
-        5px solid var(--naranja);
+            font-size: 0.95rem;
 
-    }
+            margin-bottom: 18px;
+        }
 
 
-    .info-card.vision {
+        .news-meta {
+            display: flex;
 
-      border-left-color:
-        var(--azul-principal);
+            justify-content: space-between;
 
-    }
+            gap: 10px;
 
+            border-top:
+                1px solid
+                var(--gris);
 
-    .info-card h3 {
+            padding-top: 14px;
 
-      color:
-        var(--azul-principal);
+            margin-top: auto;
 
-      font-size:
-        19px;
+            font-size: 0.78rem;
 
-      margin-bottom:
-        8px;
+            color: var(--gris-medio);
+        }
 
-    }
 
+        .news-source {
+            font-weight: 700;
 
-    .info-card p {
+            color: var(--azul-principal);
+        }
 
-      color:
-        #666;
 
-      font-size:
-        14px;
+        .news-link {
+            display: inline-flex;
 
-    }
+            margin-top: 18px;
 
+            color: var(--azul-principal);
 
-    /* =====================================================
-       SERVICIOS
-    ===================================================== */
+            font-weight: 800;
 
-    #servicios {
+            align-items: center;
 
-      background:
-        var(--azul-claro);
+            gap: 5px;
+        }
 
-    }
 
+        .news-link:hover {
+            color: var(--naranja-hover);
+        }
 
-    .services-grid {
 
-      max-width:
-        1200px;
+        .empty-news {
+            background: var(--blanco);
 
-      margin:
-        auto;
+            border-radius: var(--radio);
 
-      display:
-        grid;
+            padding: 60px 30px;
 
-      grid-template-columns:
-        repeat(3, 1fr);
+            text-align: center;
 
-      gap:
-        25px;
+            box-shadow: var(--sombra);
 
-    }
+            grid-column:
+                1 / -1;
+        }
 
 
-    .service-card {
+        .empty-news-icon {
+            font-size: 2.5rem;
 
-      background:
-        white;
+            margin-bottom: 15px;
+        }
 
-      padding:
-        30px;
 
-      border-radius:
-        10px;
+        .empty-news h3 {
+            color: var(--azul-principal);
 
-      border-top:
-        5px solid var(--naranja);
+            margin-bottom: 10px;
+        }
 
-      box-shadow:
-        var(--sombra);
 
-      transition:
-        0.3s;
+        .empty-news p {
+            color: var(--gris-medio);
+        }
 
-    }
 
+        .news-notice {
+            margin:
+                35px
+                auto
+                0;
 
-    .service-card:hover {
+            max-width: 760px;
 
-      transform:
-        translateY(-6px);
+            background: var(--blanco);
 
-      box-shadow:
-        var(--sombra-fuerte);
+            border-left:
+                5px solid
+                var(--naranja);
 
-    }
+            padding: 20px 25px;
 
+            border-radius: 10px;
 
-    .service-icon {
+            box-shadow: var(--sombra);
 
-      font-size:
-        32px;
+            color: var(--gris-medio);
 
-      margin-bottom:
-        14px;
+            text-align: center;
+        }
 
-    }
 
+        /* =========================================================
+           CONTACTO
+        ========================================================= */
 
-    .service-card h3 {
+        .contact {
+            background: var(--azul-principal);
 
-      color:
-        var(--azul-principal);
+            color: var(--blanco);
+        }
 
-      font-size:
-        18px;
 
-      line-height:
-        1.5;
+        .contact .section-header h2 {
+            color: var(--blanco);
+        }
 
-      margin-bottom:
-        12px;
 
-    }
+        .contact .section-header p {
+            color:
+                rgba(255,255,255,0.8);
+        }
 
 
-    .service-card p {
+        .contact-grid {
+            display: grid;
 
-      color:
-        #555;
+            grid-template-columns:
+                repeat(3, 1fr);
 
-      font-size:
-        14px;
+            gap: 25px;
+        }
 
-    }
 
+        .contact-card {
+            background:
+                rgba(255,255,255,0.08);
 
-    /* =====================================================
-       NORMATIVA
-    ===================================================== */
+            padding: 30px;
 
-    .normativa {
+            border-radius: var(--radio);
 
-      max-width:
-        1100px;
+            text-align: center;
 
-      margin:
-        45px auto 0;
+            border:
+                1px solid
+                rgba(255,255,255,0.1);
+        }
 
-      padding:
-        30px;
 
-      background:
-        white;
+        .contact-card h3 {
+            margin-bottom: 10px;
+        }
 
-      border-radius:
-        10px;
 
-      box-shadow:
-        var(--sombra);
+        .contact-card p {
+            color:
+                rgba(255,255,255,0.8);
+        }
 
-      display:
-        grid;
 
-      grid-template-columns:
-        repeat(3, 1fr);
+        /* =========================================================
+           FOOTER
+        ========================================================= */
 
-      gap:
-        20px;
+        footer {
+            background: var(--azul-oscuro);
 
-      text-align:
-        center;
+            color: var(--blanco);
 
-    }
+            padding: 35px 0;
+        }
 
 
-    .normativa-item h3 {
+        .footer-content {
+            display: flex;
 
-      color:
-        var(--naranja);
+            justify-content: space-between;
 
-      font-size:
-        22px;
+            align-items: center;
 
-      margin-bottom:
-        5px;
+            gap: 20px;
+        }
 
-    }
 
+        .footer-copy {
+            color:
+                rgba(255,255,255,0.7);
 
-    .normativa-item p {
+            font-size: 0.9rem;
+        }
 
-      color:
-        var(--azul-principal);
 
-      font-size:
-        13px;
+        .footer-links {
+            display: flex;
 
-      font-weight:
-        600;
+            gap: 20px;
+        }
 
-    }
 
+        .footer-links a {
+            color:
+                rgba(255,255,255,0.8);
+        }
 
-    /* =====================================================
-       BIBLIOTECA
-    ===================================================== */
 
-    #biblioteca {
+        .footer-links a:hover {
+            color: var(--naranja);
+        }
 
-      background:
-        var(--gris-fondo);
 
-    }
+        /* =========================================================
+           WHATSAPP
+        ========================================================= */
 
+        .whatsapp {
+            position: fixed;
 
-    .library-grid {
+            right: 22px;
+            bottom: 22px;
 
-      max-width:
-        1150px;
+            z-index: 2000;
 
-      margin:
-        auto;
+            background: #25D366;
 
-      display:
-        grid;
+            color: var(--blanco);
 
-      grid-template-columns:
-        repeat(4, 1fr);
+            padding:
+                13px
+                20px;
 
-      gap:
-        20px;
+            border-radius: 30px;
 
-    }
+            font-weight: 800;
 
+            box-shadow:
+                0 8px 25px
+                rgba(0,0,0,0.2);
 
-    .library-card {
+            transition:
+                transform var(--transicion);
+        }
 
-      background:
-        white;
 
-      padding:
-        25px 22px;
+        .whatsapp:hover {
+            transform: translateY(-4px);
+        }
 
-      border-radius:
-        8px;
 
-      border-left:
-        4px solid var(--azul-principal);
+        /* =========================================================
+           LOADING
+        ========================================================= */
 
-      box-shadow:
-        0 5px 18px
-        rgba(7, 43, 67, 0.08);
+        .loading {
+            text-align: center;
 
-      transition:
-        0.3s;
+            padding: 50px;
 
-    }
+            color: var(--gris-medio);
 
+            grid-column:
+                1 / -1;
+        }
 
-    .library-card:hover {
 
-      transform:
-        translateY(-5px);
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
 
-    }
+            border:
+                4px solid
+                var(--gris);
 
+            border-top-color:
+                var(--azul-principal);
 
-    .library-card h3 {
+            border-radius: 50%;
 
-      color:
-        var(--azul-principal);
+            margin:
+                0
+                auto
+                15px;
 
-      font-size:
-        16px;
+            animation:
+                girar
+                0.8s
+                linear
+                infinite;
+        }
 
-      line-height:
-        1.5;
 
-      margin-bottom:
-        12px;
+        @keyframes girar {
 
-    }
+            from {
+                transform:
+                    rotate(0deg);
+            }
 
+            to {
+                transform:
+                    rotate(360deg);
+            }
 
-    .library-card p {
+        }
 
-      color:
-        #666;
 
-      font-size:
-        13px;
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
 
-      line-height:
-        1.7;
+        @media
+        (max-width: 900px) {
 
-      margin-bottom:
-        18px;
+            .nav-menu {
+                display: none;
 
-    }
+                position: absolute;
 
+                top: 78px;
+                left: 0;
+                right: 0;
 
-    .library-link {
+                background:
+                    var(--azul-oscuro);
 
-      color:
-        var(--naranja);
+                flex-direction: column;
 
-      font-size:
-        13px;
+                align-items: stretch;
 
-      font-weight:
-        700;
+                padding: 20px;
 
-    }
+                gap: 0;
+            }
 
 
-    .library-link:hover {
+            .nav-menu.active {
+                display: flex;
+            }
 
-      color:
-        var(--azul-principal);
 
-    }
+            .nav-menu li {
+                padding:
+                    12px
+                    0;
+            }
 
 
-    /* =====================================================
-       NOTICIAS AUTOMÁTICAS
-    ===================================================== */
+            .menu-toggle {
+                display: block;
+            }
 
-    #noticias {
 
-      background:
-        var(--azul-claro);
+            .services-grid,
+            .library-grid,
+            .news-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
 
-    }
 
+            .about-grid {
+                grid-template-columns:
+                    1fr;
+            }
 
-    .news-status {
 
-      max-width:
-        900px;
+            .contact-grid {
+                grid-template-columns:
+                    1fr;
+            }
 
-      margin:
-        -20px auto 35px;
+        }
 
-      text-align:
-        center;
 
-      color:
-        #777;
+        @media
+        (max-width: 650px) {
 
-      font-size:
-        13px;
+            section {
+                padding: 60px 0;
+            }
 
-    }
 
+            .brand-title {
+                font-size:
+                    0.95rem;
+            }
 
-    .news-grid {
 
-      max-width:
-        1200px;
+            .brand-subtitle {
+                font-size:
+                    0.62rem;
+            }
 
-      margin:
-        auto;
 
-      display:
-        grid;
+            .brand-logo {
+                width: 48px;
+                height: 48px;
+            }
 
-      grid-template-columns:
-        repeat(3, 1fr);
 
-      gap:
-        25px;
+            .hero {
+                padding:
+                    75px
+                    0;
+            }
 
-    }
 
+            .hero h1 {
+                font-size:
+                    2.3rem;
+            }
 
-    .news-card {
 
-      background:
-        white;
+            .btn-secondary {
+                margin:
+                    10px
+                    0
+                    0;
+            }
 
-      border-radius:
-        12px;
 
-      overflow:
-        hidden;
+            .services-grid,
+            .library-grid,
+            .news-grid,
+            .news-controls {
+                grid-template-columns:
+                    1fr;
+            }
 
-      box-shadow:
-        var(--sombra);
 
-      transition:
-        0.3s;
+            .footer-content {
+                flex-direction: column;
 
-      display:
-        flex;
+                text-align: center;
+            }
 
-      flex-direction:
-        column;
 
-    }
+            .whatsapp {
+                right: 15px;
+                bottom: 15px;
 
+                padding:
+                    11px
+                    16px;
+            }
 
-    .news-card:hover {
+        }
 
-      transform:
-        translateY(-5px);
-
-      box-shadow:
-        var(--sombra-fuerte);
-
-    }
-
-
-    .news-top {
-
-      padding:
-        28px;
-
-      background:
-        var(--azul-principal);
-
-      color:
-        white;
-
-    }
-
-
-    .news-category {
-
-      color:
-        var(--naranja);
-
-      font-size:
-        11px;
-
-      font-weight:
-        700;
-
-      text-transform:
-        uppercase;
-
-      letter-spacing:
-        0.5px;
-
-    }
-
-
-    .news-top h3 {
-
-      font-size:
-        18px;
-
-      line-height:
-        1.5;
-
-      margin-top:
-        10px;
-
-    }
-
-
-    .news-body {
-
-      padding:
-        25px;
-
-      flex:
-        1;
-
-      display:
-        flex;
-
-      flex-direction:
-        column;
-
-    }
-
-
-    .news-date {
-
-      display:
-        block;
-
-      color:
-        #999;
-
-      font-size:
-        11px;
-
-      margin-bottom:
-        12px;
-
-    }
-
-
-    .news-body p {
-
-      color:
-        #666;
-
-      font-size:
-        14px;
-
-      line-height:
-        1.7;
-
-      margin-bottom:
-        20px;
-
-    }
-
-
-    .news-link {
-
-      color:
-        var(--naranja);
-
-      font-size:
-        13px;
-
-      font-weight:
-        700;
-
-      margin-top:
-        auto;
-
-    }
-
-
-    .news-link:hover {
-
-      color:
-        var(--azul-principal);
-
-    }
-
-
-    .news-message {
-
-      max-width:
-        850px;
-
-      margin:
-        40px auto 0;
-
-      padding:
-        20px 25px;
-
-      background:
-        white;
-
-      border-left:
-        5px solid var(--naranja);
-
-      border-radius:
-        8px;
-
-      color:
-        #555;
-
-      font-size:
-        13px;
-
-      text-align:
-        center;
-
-      box-shadow:
-        0 5px 15px
-        rgba(0, 0, 0, 0.05);
-
-    }
-
-
-    /* =====================================================
-       ESTADOS DE NOTICIAS
-    ===================================================== */
-
-    .news-loading {
-
-      grid-column:
-        1 / -1;
-
-      text-align:
-        center;
-
-      padding:
-        50px;
-
-      color:
-        #777;
-
-    }
-
-
-    .news-error {
-
-      grid-column:
-        1 / -1;
-
-      text-align:
-        center;
-
-      padding:
-        40px;
-
-      background:
-        white;
-
-      border-radius:
-        10px;
-
-      color:
-        #777;
-
-    }
-
-
-    /* =====================================================
-       CONTACTO
-    ===================================================== */
-
-    #contacto {
-
-      background:
-        var(--azul-principal);
-
-      color:
-        white;
-
-      text-align:
-        center;
-
-    }
-
-
-    #contacto .section-title h2 {
-
-      color:
-        white;
-
-    }
-
-
-    #contacto .section-title p {
-
-      color:
-        #dce8ef;
-
-    }
-
-
-    .contact-info {
-
-      max-width:
-        750px;
-
-      margin:
-        auto;
-
-    }
-
-
-    .contact-info p {
-
-      color:
-        #e6eef3;
-
-      margin-bottom:
-        25px;
-
-      font-size:
-        15px;
-
-    }
-
-
-    .contact-data {
-
-      margin:
-        25px 0 30px;
-
-      display:
-        flex;
-
-      justify-content:
-        center;
-
-      flex-wrap:
-        wrap;
-
-      gap:
-        20px;
-
-    }
-
-
-    .contact-data a {
-
-      color:
-        white;
-
-      font-weight:
-        600;
-
-    }
-
-
-    .contact-data a:hover {
-
-      color:
-        var(--naranja);
-
-    }
-
-
-    /* =====================================================
-       FOOTER
-    ===================================================== */
-
-    footer {
-
-      background:
-        var(--azul-oscuro);
-
-      color:
-        white;
-
-      text-align:
-        center;
-
-      padding:
-        30px 20px;
-
-      font-size:
-        13px;
-
-    }
-
-
-    footer p {
-
-      margin:
-        5px 0;
-
-      color:
-        #dce8ef;
-
-    }
-
-
-    footer strong {
-
-      color:
-        white;
-
-    }
-
-
-    /* =====================================================
-       WHATSAPP
-    ===================================================== */
-
-    .whatsapp-float {
-
-      position:
-        fixed;
-
-      right:
-        25px;
-
-      bottom:
-        20px;
-
-      z-index:
-        2000;
-
-      background:
-        var(--verde-whatsapp);
-
-      color:
-        white;
-
-      padding:
-        13px 22px;
-
-      border-radius:
-        35px;
-
-      font-weight:
-        700;
-
-      font-size:
-        14px;
-
-      box-shadow:
-        0 5px 18px
-        rgba(0, 0, 0, 0.25);
-
-      transition:
-        0.3s;
-
-    }
-
-
-    .whatsapp-float:hover {
-
-      transform:
-        translateY(-4px);
-
-      background:
-        #20bd5a;
-
-    }
-
-
-    /* =====================================================
-       TABLET
-    ===================================================== */
-
-    @media (max-width: 1100px) {
-
-
-      .services-grid {
-
-        grid-template-columns:
-          repeat(2, 1fr);
-
-      }
-
-
-      .library-grid {
-
-        grid-template-columns:
-          repeat(2, 1fr);
-
-      }
-
-
-      .news-grid {
-
-        grid-template-columns:
-          repeat(2, 1fr);
-
-      }
-
-
-    }
-
-
-    /* =====================================================
-       MENÚ TABLET
-    ===================================================== */
-
-    @media (max-width: 850px) {
-
-
-      .navbar {
-
-        padding:
-          10px 20px;
-
-      }
-
-
-      .menu-btn {
-
-        display:
-          block;
-
-      }
-
-
-      .nav-menu {
-
-        display:
-          none;
-
-        position:
-          absolute;
-
-        top:
-          78px;
-
-        left:
-          0;
-
-        right:
-          0;
-
-        background:
-          var(--azul-principal);
-
-        flex-direction:
-          column;
-
-        padding:
-          25px;
-
-        gap:
-          20px;
-
-        box-shadow:
-          0 10px 20px
-          rgba(0, 0, 0, 0.2);
-
-      }
-
-
-      .nav-menu.active {
-
-        display:
-          flex;
-
-      }
-
-
-      .nosotros-box {
-
-        grid-template-columns:
-          1fr;
-
-        padding:
-          30px;
-
-      }
-
-
-      .normativa {
-
-        grid-template-columns:
-          1fr;
-
-      }
-
-
-    }
-
-
-    /* =====================================================
-       MÓVIL
-    ===================================================== */
-
-    @media (max-width: 600px) {
-
-
-      .brand h1 {
-
-        font-size:
-          14px;
-
-        white-space:
-          normal;
-
-      }
-
-
-      .brand p {
-
-        font-size:
-          8px;
-
-      }
-
-
-      .logo {
-
-        width:
-          48px;
-
-        height:
-          48px;
-
-      }
-
-
-      .hero {
-
-        min-height:
-          500px;
-
-        padding:
-          60px 18px;
-
-      }
-
-
-      .hero h2 {
-
-        font-size:
-          29px;
-
-      }
-
-
-      .hero p {
-
-        font-size:
-          14px;
-
-      }
-
-
-      section {
-
-        padding:
-          60px 15px;
-
-      }
-
-
-      .nosotros-box {
-
-        padding:
-          25px;
-
-      }
-
-
-      .services-grid,
-
-      .library-grid,
-
-      .news-grid {
-
-        grid-template-columns:
-          1fr;
-
-      }
-
-
-      .whatsapp-float {
-
-        right:
-          15px;
-
-        bottom:
-          15px;
-
-        padding:
-          11px 17px;
-
-        font-size:
-          13px;
-
-      }
-
-
-    }
-
-  </style>
-
+    </style>
 </head>
 
 
 <body>
 
 
-  <!-- =====================================================
-       HEADER
-  ====================================================== -->
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
-  <header>
+<header>
 
-
-    <nav class="navbar">
-
-
-      <a
-        href="#inicio"
-        class="logo-area"
-      >
-
-
-        <img
-          src="logo.png"
-          alt="Mundo Liquidación de Obras"
-          class="logo"
-        >
-
-
-        <div class="brand">
-
-
-          <h1>
-            MUNDO LIQUIDACIÓN DE OBRAS
-          </h1>
-
-
-          <p>
-            Conocimiento técnico que genera confianza
-          </p>
-
-
-        </div>
-
-
-      </a>
-
-
-      <button
-        class="menu-btn"
-        id="menuBtn"
-        aria-label="Abrir menú"
-        aria-expanded="false"
-      >
-
-        ☰
-
-      </button>
-
-
-      <ul
-        class="nav-menu"
-        id="navMenu"
-      >
-
-
-        <li>
-
-          <a href="#inicio">
-            Inicio
-          </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="#nosotros">
-            Nosotros
-          </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="#servicios">
-            Servicios
-          </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="#biblioteca">
-            Biblioteca
-          </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="#noticias">
-            Noticias
-          </a>
-
-        </li>
-
-
-        <li>
-
-          <a
-            href="https://wa.me/51966630042"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="nav-contacto"
-          >
-
-            Contacto
-
-          </a>
-
-        </li>
-
-
-      </ul>
-
-
-    </nav>
-
-
-  </header>
-
-
-  <!-- =====================================================
-       CONTENIDO
-  ====================================================== -->
-
-  <main>
-
-
-    <!-- ===================================================
-         INICIO
-    ==================================================== -->
-
-    <section
-      class="hero"
-      id="inicio"
-    >
-
-
-      <div class="hero-content">
-
-
-        <h2>
-
-          Consultoría, Peritajes,
-          Liquidación de Obras
-          y Tasaciones Inmobiliarias
-
-        </h2>
-
-
-        <div class="hero-line"></div>
-
-
-        <p>
-
-          Asesoría técnica y especializada
-          para obras públicas y privadas.
-          Elaboración, revisión y sustentación
-          de expedientes técnicos,
-          liquidaciones y peritajes.
-
-        </p>
-
+    <div class="container navbar">
 
         <a
-          href="https://wa.me/51966630042?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios."
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-principal"
+            href="#inicio"
+            class="brand"
+            aria-label="Mundo Liquidación de Obras - Inicio"
         >
 
-          💬 Consultar por WhatsApp
+            <img
+                src="logo.png"
+                alt="Logo Mundo Liquidación de Obras"
+                class="brand-logo"
+            >
+
+            <span class="brand-text">
+
+                <span class="brand-title">
+                    MUNDO LIQUIDACIÓN DE OBRAS
+                </span>
+
+                <span class="brand-subtitle">
+                    Conocimiento técnico que genera confianza
+                </span>
+
+            </span>
 
         </a>
 
 
-      </div>
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
 
 
-    </section>
+        <nav>
+
+            <ul
+                class="nav-menu"
+                id="navMenu"
+            >
+
+                <li>
+                    <a href="#inicio">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#nosotros">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#servicios">
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#biblioteca">
+                        Biblioteca
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#noticias">
+                        Noticias
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#contacto"
+                        class="nav-contacto"
+                    >
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
 
 
-    <!-- ===================================================
-         NOSOTROS
-    ==================================================== -->
+<!-- =========================================================
+     INICIO
+========================================================= -->
 
-    <section id="nosotros">
-
-
-      <div class="section-title">
+<main>
 
 
-        <h2>
-          Sobre Nosotros
-        </h2>
+<section
+    id="inicio"
+    class="hero"
+>
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                CONSULTORÍA TÉCNICA ESPECIALIZADA
+            </span>
 
 
-        <p>
-
-          Especialistas en ingeniería
-          técnico-legal en obras públicas
-          y privadas
-
-        </p>
-
-
-      </div>
-
-
-      <div class="nosotros-box">
-
-
-        <div class="nosotros-text">
-
-
-          <h3>
-
-            Experiencia y rigor técnico
-            al servicio de sus proyectos
-
-          </h3>
-
-
-          <p>
-
-            En
-            <strong>
-              Mundo Liquidación de Obras
-            </strong>
-            brindamos servicios integrales
-            de consultoría, peritajes,
-            valorizaciones, reajustes,
-            liquidaciones y tasaciones
-            inmobiliarias.
-
-          </p>
-
-
-          <p>
-
-            Nuestro objetivo es brindar
-            soluciones técnicas y especializadas
-            para empresas, contratistas,
-            profesionales y entidades
-            relacionadas con proyectos
-            de construcción.
-
-          </p>
-
-
-          <p>
-
-            Analizamos documentación contractual,
-            expedientes técnicos, valorizaciones,
-            liquidaciones y controversias,
-            buscando soluciones claras,
-            sustentadas y técnicamente consistentes.
-
-          </p>
-
-
-        </div>
-
-
-        <div class="mision-vision">
-
-
-          <div class="info-card">
-
-
-            <h3>
-              🎯 Misión
-            </h3>
+            <h1>
+                Liquidación de Obras,
+                Peritajes y Tasaciones
+            </h1>
 
 
             <p>
-
-              Ofrecer soporte técnico especializado
-              para la eficiente gestión de
-              liquidaciones, valorizaciones,
-              peritajes y controversias relacionadas
-              con proyectos de construcción.
-
+                Brindamos servicios especializados para el análisis
+                técnico, económico y contractual de proyectos,
+                obras y controversias, con información clara y
+                criterios profesionales.
             </p>
 
 
-          </div>
+            <a
+                href="#servicios"
+                class="btn btn-primary"
+            >
+                Conocer nuestros servicios
+            </a>
 
 
-          <div class="info-card vision">
+            <a
+                href="#contacto"
+                class="btn btn-secondary"
+            >
+                Solicitar asesoría
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 
-            <h3>
-              👁️ Visión
-            </h3>
+<!-- =========================================================
+     NOSOTROS
+========================================================= -->
 
+<section
+    id="nosotros"
+    class="about"
+>
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>
+                Sobre Nosotros
+            </h2>
 
             <p>
-
-              Ser una plataforma de referencia
-              nacional en consultoría técnica,
-              liquidación de obras, peritajes
-              y tasaciones.
-
+                Experiencia, análisis técnico y compromiso
+                para contribuir a decisiones mejor fundamentadas.
             </p>
 
+        </div>
 
-          </div>
 
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <h3>
+                    Conocimiento técnico que genera confianza
+                </h3>
+
+                <p>
+                    Mundo Liquidación de Obras es una plataforma
+                    especializada en servicios de consultoría,
+                    liquidación de obras, peritajes, tasaciones
+                    y análisis técnico relacionado con proyectos
+                    de construcción e infraestructura.
+                </p>
+
+                <p>
+                    Nuestro enfoque integra criterios técnicos,
+                    económicos y contractuales para ayudar a
+                    nuestros clientes a comprender la situación
+                    real de sus proyectos.
+                </p>
+
+            </div>
+
+
+            <div class="about-box">
+
+                <p>
+                    <strong>
+                        Nuestro compromiso:
+                    </strong>
+                </p>
+
+                <p>
+                    Proporcionar análisis profesionales,
+                    información organizada y criterios técnicos
+                    que contribuyan a una adecuada toma de
+                    decisiones.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICIOS
+========================================================= -->
+
+<section
+    id="servicios"
+    class="services"
+>
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>
+                Nuestros Servicios
+            </h2>
+
+            <p>
+                Soluciones técnicas orientadas a proyectos,
+                obras, contratos y controversias.
+            </p>
 
         </div>
 
 
-      </div>
+        <div class="services-grid">
 
 
-    </section>
+            <article class="service-card">
 
+                <div class="service-icon">
+                    ⚙️
+                </div>
 
-    <!-- ===================================================
-         SERVICIOS
-    ==================================================== -->
+                <h3>
+                    Liquidación de Obras
+                </h3>
 
-    <section id="servicios">
+                <p>
+                    Análisis y elaboración de liquidaciones
+                    técnicas y económicas de obras y contratos.
+                </p>
 
+            </article>
 
-      <div class="section-title">
 
+            <article class="service-card">
 
-        <h2>
-          Nuestros Servicios Especializados
-        </h2>
+                <div class="service-icon">
+                    📐
+                </div>
 
+                <h3>
+                    Peritajes Técnicos
+                </h3>
 
-        <p>
+                <p>
+                    Evaluación especializada de aspectos técnicos,
+                    económicos y constructivos relacionados con
+                    proyectos y controversias.
+                </p>
 
-          Soluciones técnicas a la medida
-          de contratistas, empresas y entidades
+            </article>
 
-        </p>
 
+            <article class="service-card">
 
-      </div>
+                <div class="service-icon">
+                    🏗️
+                </div>
 
+                <h3>
+                    Tasaciones
+                </h3>
 
-      <div class="services-grid">
+                <p>
+                    Análisis técnico y valoración de bienes,
+                    obras e infraestructura de acuerdo con
+                    criterios profesionales.
+                </p>
 
+            </article>
 
-        <article class="service-card">
 
+            <article class="service-card">
 
-          <div class="service-icon">
-            📜
-          </div>
+                <div class="service-icon">
+                    📊
+                </div>
 
+                <h3>
+                    Valorizaciones
+                </h3>
 
-          <h3>
-            Consultoría en Liquidación
-            de Obras
-          </h3>
+                <p>
+                    Revisión y análisis de valorizaciones,
+                    metrados, avances y componentes económicos
+                    de proyectos.
+                </p>
 
+            </article>
 
-          <p>
 
-            Elaboración y revisión
-            técnico-financiera de expedientes
-            de liquidación de contratos
-            de obra pública y privada.
+            <article class="service-card">
 
-          </p>
+                <div class="service-icon">
+                    📋
+                </div>
 
+                <h3>
+                    Análisis Contractual
+                </h3>
 
-        </article>
+                <p>
+                    Revisión técnica de contratos, obligaciones,
+                    adicionales, ampliaciones y situaciones
+                    relacionadas con la ejecución de obras.
+                </p>
 
+            </article>
 
-        <article class="service-card">
 
+            <article class="service-card">
 
-          <div class="service-icon">
-            📊
-          </div>
-
-
-          <h3>
-            Reajustes, GG y Penalidades
-          </h3>
-
-
-          <p>
-
-            Análisis y cálculo de reajustes,
-            fórmulas polinómicas, mayores
-            gastos generales, adicionales,
-            deductivos e intereses.
-
-          </p>
-
-
-        </article>
-
-
-        <article class="service-card">
-
-
-          <div class="service-icon">
-            🏢
-          </div>
-
-
-          <h3>
-            Tasaciones Inmobiliarias
-          </h3>
-
-
-          <p>
-
-            Valuación comercial y reglamentaria
-            de terrenos, inmuebles,
-            infraestructura y activos.
-
-          </p>
-
-
-        </article>
-
-
-        <article class="service-card">
-
-
-          <div class="service-icon">
-            ⚖️
-          </div>
-
-
-          <h3>
-            Peritajes Técnicos
-            y Arbitraje
-          </h3>
-
-
-          <p>
-
-            Elaboración de informes periciales
-            para controversias, conciliaciones,
-            JPRD y procesos arbitrales.
-
-          </p>
-
-
-        </article>
-
-
-        <article class="service-card">
-
-
-          <div class="service-icon">
-            🎓
-          </div>
-
-
-          <h3>
-            Capacitación y Asesoría
-          </h3>
-
-
-          <p>
-
-            Capacitación y orientación técnica
-            relacionada con contratación pública,
-            obras, contratos y liquidaciones.
-
-          </p>
-
-
-        </article>
-
-
-        <article class="service-card">
-
-
-          <div class="service-icon">
-            📑
-          </div>
-
-
-          <h3>
-            Revisión de Expedientes
-          </h3>
-
-
-          <p>
-
-            Análisis técnico-documentario
-            de contratos, expedientes,
-            valorizaciones y documentación
-            relacionada con la obra.
-
-          </p>
-
-
-        </article>
-
-
-      </div>
-
-
-      <div class="normativa">
-
-
-        <div class="normativa-item">
-
-
-          <h3>
-            Marco Normativo
-          </h3>
-
-
-          <p>
-            Ley N.° 32069 y normativa aplicable
-          </p>
+                <div class="service-icon">
+                    🔎
+                </div>
+
+                <h3>
+                    Consultoría Especializada
+                </h3>
+
+                <p>
+                    Asesoría técnica para proyectos, expedientes,
+                    controversias y toma de decisiones.
+                </p>
+
+            </article>
 
 
         </div>
 
+    </div>
 
-        <div class="normativa-item">
-
-
-          <h3>
-            Liquidaciones
-          </h3>
+</section>
 
 
-          <p>
-            Análisis técnico y financiero
-          </p>
+<!-- =========================================================
+     BIBLIOTECA
+========================================================= -->
 
+<section
+    id="biblioteca"
+    class="library"
+>
 
-        </div>
+    <div class="container">
 
+        <div class="section-header">
 
-        <div class="normativa-item">
+            <h2>
+                Biblioteca Técnica
+            </h2>
 
-
-          <h3>
-            Peritajes
-          </h3>
-
-
-          <p>
-            Soporte técnico en controversias
-          </p>
-
+            <p>
+                Recursos e información de interés para profesionales
+                vinculados con obras, construcción y contratación.
+            </p>
 
         </div>
 
 
-      </div>
+        <div class="library-grid">
 
 
-    </section>
+            <article class="library-card">
 
+                <h3>
+                    Normativa
+                </h3>
 
-    <!-- ===================================================
-         BIBLIOTECA
-    ==================================================== -->
+                <p>
+                    Información de referencia sobre normativa
+                    relacionada con obras y contratación pública.
+                </p>
 
-    <section id="biblioteca">
+                <a
+                    href="#noticias"
+                    class="library-link"
+                >
+                    Ver información →
+                </a>
 
+            </article>
 
-      <div class="section-title">
 
+            <article class="library-card">
 
-        <h2>
-          Biblioteca Técnica
-        </h2>
+                <h3>
+                    Documentación Técnica
+                </h3>
 
+                <p>
+                    Recursos de interés para análisis,
+                    revisión y gestión de proyectos.
+                </p>
 
-        <p>
+                <a
+                    href="#contacto"
+                    class="library-link"
+                >
+                    Solicitar información →
+                </a>
 
-          Documentos, normas y recursos
-          de consulta frecuente
+            </article>
 
-        </p>
 
+            <article class="library-card">
 
-      </div>
+                <h3>
+                    Noticias del Sector
+                </h3>
 
+                <p>
+                    Información actualizada obtenida automáticamente
+                    desde las fuentes configuradas.
+                </p>
 
-      <div class="library-grid">
+                <a
+                    href="#noticias"
+                    class="library-link"
+                >
+                    Ver noticias →
+                </a>
 
-
-        <article class="library-card">
-
-
-          <h3>
-            📜 Ley N.° 32069
-          </h3>
-
-
-          <p>
-
-            Información y recursos relacionados
-            con la normativa vigente de
-            contratación pública.
-
-          </p>
-
-
-          <a
-            href="#contacto"
-            class="library-link"
-          >
-
-            Solicitar información →
-
-          </a>
-
-
-        </article>
-
-
-        <article class="library-card">
-
-
-          <h3>
-            📘 Ley N.° 30225
-          </h3>
-
-
-          <p>
-
-            Información de referencia sobre
-            el marco normativo anterior de
-            contrataciones.
-
-          </p>
-
-
-          <a
-            href="#contacto"
-            class="library-link"
-          >
-
-            Solicitar información →
-
-          </a>
-
-
-        </article>
-
-
-        <article class="library-card">
-
-
-          <h3>
-            📊 Formatos de Liquidación
-          </h3>
-
-
-          <p>
-
-            Modelos y herramientas para
-            análisis de liquidaciones,
-            reajustes y valorizaciones.
-
-          </p>
-
-
-          <a
-            href="https://wa.me/51966630042?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20los%20formatos%20de%20liquidaci%C3%B3n."
-            target="_blank"
-            rel="noopener noreferrer"
-            class="library-link"
-          >
-
-            Solicitar formatos →
-
-          </a>
-
-
-        </article>
-
-
-        <article class="library-card">
-
-
-          <h3>
-            🏠 Tasaciones
-          </h3>
-
-
-          <p>
-
-            Información sobre criterios
-            técnicos y metodologías de
-            valuación inmobiliaria.
-
-          </p>
-
-
-          <a
-            href="#contacto"
-            class="library-link"
-          >
-
-            Solicitar información →
-
-          </a>
-
-
-        </article>
-
-
-      </div>
-
-
-    </section>
-
-
-    <!-- ===================================================
-         NOTICIAS AUTOMÁTICAS
-    ==================================================== -->
-
-    <section id="noticias">
-
-
-      <div class="section-title">
-
-
-        <h2>
-          Noticias y Novedades
-        </h2>
-
-
-        <p>
-
-          Información actualizada sobre
-          obras, contratación pública,
-          liquidaciones y temas relacionados.
-
-        </p>
-
-
-      </div>
-
-
-      <div
-        id="news-status"
-        class="news-status"
-      >
-
-        Cargando información...
-
-      </div>
-
-
-      <div
-        id="news-grid"
-        class="news-grid"
-      >
-
-
-        <div class="news-loading">
-
-          📰
-
-          <br><br>
-
-          Cargando las últimas noticias...
-
-        </div>
-
-
-      </div>
-
-
-      <div
-        id="news-message"
-        class="news-message"
-      >
-
-        Las noticias se actualizan automáticamente
-        a partir de las fuentes configuradas.
-
-      </div>
-
-
-    </section>
-
-
-    <!-- ===================================================
-         CONTACTO
-    ==================================================== -->
-
-    <section id="contacto">
-
-
-      <div class="section-title">
-
-
-        <h2>
-          ¿Necesita asesoría especializada?
-        </h2>
-
-
-        <p>
-
-          Estamos listos para analizar
-          su proyecto, expediente o controversia.
-
-        </p>
-
-
-      </div>
-
-
-      <div class="contact-info">
-
-
-        <p>
-
-          Comuníquese con nosotros para
-          recibir orientación técnica
-          especializada.
-
-        </p>
-
-
-        <div class="contact-data">
-
-
-          <a
-            href="https://wa.me/51966630042"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-
-            📱 +51 966 630 042
-
-          </a>
+            </article>
 
 
         </div>
 
+    </div>
 
-        <a
-          href="https://wa.me/51966630042?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios."
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-principal"
+</section>
+
+
+<!-- =========================================================
+     NOTICIAS
+========================================================= -->
+
+<section
+    id="noticias"
+>
+
+    <div class="container">
+
+
+        <div class="section-header">
+
+            <h2>
+                Noticias y Novedades
+            </h2>
+
+            <p>
+                Información actualizada sobre obras,
+                contratación pública, liquidaciones,
+                infraestructura y temas relacionados.
+            </p>
+
+        </div>
+
+
+        <!-- CONTROLES -->
+
+        <div class="news-controls">
+
+            <input
+                type="search"
+                id="newsSearch"
+                placeholder="Buscar noticias..."
+                aria-label="Buscar noticias"
+            >
+
+
+            <select
+                id="newsCategory"
+                aria-label="Filtrar por categoría"
+            >
+
+                <option value="">
+                    Todas las categorías
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- ESTADO -->
+
+        <div
+            id="newsStatus"
+            class="news-status"
+            aria-live="polite"
+        >
+            Cargando noticias...
+        </div>
+
+
+        <!-- CONTENEDOR -->
+
+        <div
+            id="newsGrid"
+            class="news-grid"
         >
 
-          💬 Contactar por WhatsApp
+            <div class="loading">
 
-        </a>
+                <div class="loading-spinner"></div>
 
+                <p>
+                    Cargando información actualizada...
+                </p>
 
-      </div>
+            </div>
 
-
-    </section>
-
-
-  </main>
-
-
-  <!-- =====================================================
-       FOOTER
-  ====================================================== -->
-
-  <footer>
+        </div>
 
 
-    <p>
+        <div class="news-notice">
 
-      © 2026
+            Las noticias se actualizan automáticamente
+            a partir de las fuentes configuradas en el sistema.
+            La información publicada mantiene un enlace hacia
+            la fuente original para su consulta.
 
-      <strong>
-        Mundo Liquidación de Obras
-      </strong>
-
-    </p>
-
-
-    <p>
-
-      Consultoría · Liquidación de Obras ·
-      Peritajes · Tasaciones
-
-    </p>
+        </div>
 
 
-    <p>
+    </div>
 
-      WhatsApp:
-      +51 966 630 042
-
-    </p>
+</section>
 
 
-  </footer>
+<!-- =========================================================
+     CONTACTO
+========================================================= -->
+
+<section
+    id="contacto"
+    class="contact"
+>
+
+    <div class="container">
 
 
-  <!-- =====================================================
-       WHATSAPP FLOTANTE
-  ====================================================== -->
+        <div class="section-header">
 
-  <a
-    href="https://wa.me/51966630042?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios."
+            <h2>
+                ¿Necesita asesoría especializada?
+            </h2>
+
+            <p>
+                Estamos listos para analizar su proyecto,
+                expediente, obra o controversia.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Consultoría
+                </h3>
+
+                <p>
+                    Solicite una evaluación inicial
+                    de su requerimiento.
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Peritajes
+                </h3>
+
+                <p>
+                    Evaluamos situaciones técnicas y
+                    económicas relacionadas con obras.
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Liquidaciones
+                </h3>
+
+                <p>
+                    Analizamos la situación técnica,
+                    económica y contractual de su obra.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div class="footer-copy">
+
+            ©
+            <span id="currentYear"></span>
+            Mundo Liquidación de Obras.
+            Todos los derechos reservados.
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#servicios">
+                Servicios
+            </a>
+
+            <a href="#noticias">
+                Noticias
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     WHATSAPP
+========================================================= -->
+
+<a
+    href="https://wa.me/51966630042"
     target="_blank"
     rel="noopener noreferrer"
-    class="whatsapp-float"
+    class="whatsapp"
     aria-label="Contactar por WhatsApp"
-  >
-
+>
     💬 WhatsApp
-
-  </a>
-
-
-  <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
-
-  <script>
+</a>
 
 
-    /* =====================================================
-       MENÚ MÓVIL
-    ====================================================== */
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
 
 
-    const menuBtn =
-      document.getElementById(
-        "menuBtn"
-      );
+/* =========================================================
+   MENÚ MÓVIL
+========================================================= */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navMenu =
+    document.getElementById("navMenu");
 
 
-    const navMenu =
-      document.getElementById(
-        "navMenu"
-      );
+menuToggle.addEventListener(
+    "click",
+    function () {
 
-
-    menuBtn.addEventListener(
-      "click",
-      function() {
-
-
-        navMenu.classList.toggle(
-          "active"
-        );
-
+        navMenu.classList.toggle("active");
 
         const abierto =
-          navMenu.classList.contains(
-            "active"
-          );
+            navMenu.classList.contains("active");
 
-
-        menuBtn.setAttribute(
-          "aria-expanded",
-          abierto
+        menuToggle.setAttribute(
+            "aria-expanded",
+            abierto
         );
 
+    }
+);
 
-      }
+
+document
+    .querySelectorAll("#navMenu a")
+    .forEach(
+        function (enlace) {
+
+            enlace.addEventListener(
+                "click",
+                function () {
+
+                    navMenu.classList.remove(
+                        "active"
+                    );
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+            );
+
+        }
     );
 
 
-    document
-      .querySelectorAll(
-        ".nav-menu a"
-      )
-      .forEach(
-        function(link) {
+/* =========================================================
+   AÑO ACTUAL
+========================================================= */
+
+document.getElementById(
+    "currentYear"
+).textContent =
+    new Date().getFullYear();
 
 
-          link.addEventListener(
-            "click",
-            function() {
+/* =========================================================
+   SISTEMA DE NOTICIAS
+========================================================= */
+
+const newsGrid =
+    document.getElementById(
+        "newsGrid"
+    );
 
 
-              navMenu.classList.remove(
-                "active"
-              );
+const newsStatus =
+    document.getElementById(
+        "newsStatus"
+    );
 
 
-              menuBtn.setAttribute(
-                "aria-expanded",
-                "false"
-              );
+const newsSearch =
+    document.getElementById(
+        "newsSearch"
+    );
 
 
-            }
-          );
+const newsCategory =
+    document.getElementById(
+        "newsCategory"
+    );
 
 
+let todasLasNoticias = [];
+
+
+/* =========================================================
+   FORMATEAR FECHA
+========================================================= */
+
+function formatearFecha(fecha) {
+
+    if (!fecha) {
+
+        return "Fecha no disponible";
+
+    }
+
+
+    const fechaObjeto =
+        new Date(fecha);
+
+
+    if (
+        isNaN(
+            fechaObjeto.getTime()
+        )
+    ) {
+
+        return fecha;
+
+    }
+
+
+    return fechaObjeto.toLocaleDateString(
+        "es-PE",
+        {
+            day: "2-digit",
+            month: "long",
+            year: "numeric"
         }
-      );
+    );
+
+}
 
 
-    /* =====================================================
-       NOTICIAS AUTOMÁTICAS
-    ====================================================== */
+/* =========================================================
+   ESCAPAR HTML
+========================================================= */
+
+function escaparHTML(texto) {
+
+    if (
+        texto === null ||
+        texto === undefined
+    ) {
+
+        return "";
+
+    }
 
 
-    async function cargarNoticias() {
-
-
-      const contenedor =
-        document.getElementById(
-          "news-grid"
+    return String(texto)
+        .replace(
+            /&/g,
+            "&amp;"
+        )
+        .replace(
+            /</g,
+            "&lt;"
+        )
+        .replace(
+            />/g,
+            "&gt;"
+        )
+        .replace(
+            /"/g,
+            "&quot;"
+        )
+        .replace(
+            /'/g,
+            "&#039;"
         );
 
-
-      const estado =
-        document.getElementById(
-          "news-status"
-        );
+}
 
 
-      const mensaje =
-        document.getElementById(
-          "news-message"
-        );
+/* =========================================================
+   CARGAR NOTICIAS
+========================================================= */
 
+async function cargarNoticias() {
 
-      try {
+    try {
+
+        newsStatus.textContent =
+            "Consultando información actualizada...";
 
 
         const respuesta =
-          await fetch(
-            "noticias.json?v=" +
-            Date.now()
-          );
+            await fetch(
+                "noticias.json?cache=" +
+                Date.now()
+            );
 
 
         if (
-          !respuesta.ok
+            !respuesta.ok
         ) {
 
-          throw new Error(
-            "No se pudo cargar noticias.json"
-          );
+            throw new Error(
+                "No se pudo cargar noticias.json"
+            );
 
         }
 
 
         const datos =
-          await respuesta.json();
-
-
-        contenedor.innerHTML =
-          "";
-
-
-        const noticias =
-          Array.isArray(
-            datos.noticias
-          )
-          ? datos.noticias
-          : [];
+            await respuesta.json();
 
 
         if (
-          noticias.length === 0
+            Array.isArray(datos)
         ) {
 
+            todasLasNoticias =
+                datos;
 
-          contenedor.innerHTML = `
+        } else if (
+            Array.isArray(
+                datos.noticias
+            )
+        ) {
 
-            <div class="news-error">
-
-              📰
-
-              <br><br>
-
-              Próximamente publicaremos
-              nuevas noticias y novedades.
-
-            </div>
-
-          `;
-
-
-          estado.textContent =
-            "No hay noticias disponibles en este momento.";
-
+            todasLasNoticias =
+                datos.noticias;
 
         } else {
 
-
-          noticias.forEach(
-            function(noticia) {
-
-
-              const tarjeta =
-                document.createElement(
-                  "article"
-                );
-
-
-              tarjeta.className =
-                "news-card";
-
-
-              const titulo =
-                escaparHTML(
-                  noticia.titulo ||
-                  "Nueva noticia"
-                );
-
-
-              const categoria =
-                escaparHTML(
-                  noticia.categoria ||
-                  "Actualidad"
-                );
-
-
-              const resumen =
-                escaparHTML(
-                  noticia.resumen ||
-                  "Consulte la información completa en la fuente oficial."
-                );
-
-
-              const fecha =
-                escaparHTML(
-                  noticia.fecha ||
-                  ""
-                );
-
-
-              const fuente =
-                escaparHTML(
-                  noticia.fuente ||
-                  "Fuente oficial"
-                );
-
-
-              const url =
-                validarURL(
-                  noticia.url
-                );
-
-
-              tarjeta.innerHTML = `
-
-                <div class="news-top">
-
-                  <span class="news-category">
-
-                    ${categoria}
-
-                  </span>
-
-
-                  <h3>
-
-                    ${titulo}
-
-                  </h3>
-
-                </div>
-
-
-                <div class="news-body">
-
-                  <span class="news-date">
-
-                    ${fecha}
-
-                    ${fecha ? " · " : ""}
-
-                    ${fuente}
-
-                  </span>
-
-
-                  <p>
-
-                    ${resumen}
-
-                  </p>
-
-
-                  ${
-                    url
-                    ?
-
-                    `
-
-                    <a
-
-                      href="${url}"
-
-                      target="_blank"
-
-                      rel="noopener noreferrer"
-
-                      class="news-link"
-
-                    >
-
-                      Leer noticia →
-
-                    </a>
-
-                    `
-
-                    :
-
-                    ""
-
-                  }
-
-                </div>
-
-              `;
-
-
-              contenedor.appendChild(
-                tarjeta
-              );
-
-
-            }
-          );
-
-
-          estado.textContent =
-
-            datos.actualizado
-
-            ?
-
-            "Última actualización: " +
-            datos.actualizado
-
-            :
-
-            "Información actualizada automáticamente.";
-
+            todasLasNoticias =
+                [];
 
         }
 
 
-      }
+        prepararCategorias();
 
-      catch (
-        error
-      ) {
+        mostrarNoticias();
 
+
+    } catch (error) {
 
         console.error(
-          "Error cargando noticias:",
-          error
+            "Error cargando noticias:",
+            error
         );
 
 
-        contenedor.innerHTML = `
-
-          <div class="news-error">
-
-            No se pudieron cargar
-            las noticias en este momento.
-
-            <br><br>
-
-            Vuelva a visitar esta sección
-            más tarde.
-
-          </div>
-
-        `;
+        newsStatus.textContent =
+            "No fue posible cargar las noticias en este momento.";
 
 
-        estado.textContent =
-          "Información temporalmente no disponible.";
+        newsGrid.innerHTML = `
 
+            <div class="empty-news">
 
-        mensaje.innerHTML = `
+                <div class="empty-news-icon">
+                    📰
+                </div>
 
-          Las noticias se actualizarán
-          automáticamente cuando el sistema
-          vuelva a estar disponible.
+                <h3>
+                    Noticias temporalmente no disponibles
+                </h3>
+
+                <p>
+                    El sistema automático está funcionando,
+                    pero en este momento no se pudo obtener
+                    información desde el archivo de noticias.
+                    Intente nuevamente más tarde.
+                </p>
+
+            </div>
 
         `;
-
-
-      }
-
 
     }
 
-
-    /* =====================================================
-       SEGURIDAD PARA TEXTO
-    ====================================================== */
+}
 
 
-    function escaparHTML(
-      texto
-    ) {
+/* =========================================================
+   CATEGORÍAS
+========================================================= */
+
+function prepararCategorias() {
+
+    const categorias =
+        [
+            ...new Set(
+
+                todasLasNoticias
+
+                    .map(
+                        noticia =>
+                            noticia.categoria
+                    )
+
+                    .filter(Boolean)
+
+            )
+        ];
 
 
-      const div =
-        document.createElement(
-          "div"
+    newsCategory.innerHTML = `
+
+        <option value="">
+            Todas las categorías
+        </option>
+
+    `;
+
+
+    categorias
+        .sort()
+        .forEach(
+            function (categoria) {
+
+                const opcion =
+                    document.createElement(
+                        "option"
+                    );
+
+
+                opcion.value =
+                    categoria;
+
+
+                opcion.textContent =
+                    categoria;
+
+
+                newsCategory.appendChild(
+                    opcion
+                );
+
+            }
+        );
+
+}
+
+
+/* =========================================================
+   MOSTRAR NOTICIAS
+========================================================= */
+
+function mostrarNoticias() {
+
+    const busqueda =
+        newsSearch.value
+            .toLowerCase()
+            .trim();
+
+
+    const categoria =
+        newsCategory.value;
+
+
+    const noticiasFiltradas =
+        todasLasNoticias.filter(
+            function (noticia) {
+
+                const titulo =
+                    (
+                        noticia.titulo ||
+                        ""
+                    ).toLowerCase();
+
+
+                const descripcion =
+                    (
+                        noticia.descripcion ||
+                        noticia.resumen ||
+                        ""
+                    ).toLowerCase();
+
+
+                const fuente =
+                    (
+                        noticia.fuente ||
+                        ""
+                    ).toLowerCase();
+
+
+                const coincideBusqueda =
+                    !busqueda ||
+                    titulo.includes(
+                        busqueda
+                    ) ||
+                    descripcion.includes(
+                        busqueda
+                    ) ||
+                    fuente.includes(
+                        busqueda
+                    );
+
+
+                const coincideCategoria =
+                    !categoria ||
+                    noticia.categoria ===
+                    categoria;
+
+
+                return (
+                    coincideBusqueda &&
+                    coincideCategoria
+                );
+
+            }
         );
 
 
-      div.textContent =
-        texto;
-
-
-      return div.innerHTML;
-
-
-    }
-
-
-    /* =====================================================
-       VALIDAR ENLACES
-    ====================================================== */
-
-
-    function validarURL(
-      url
+    if (
+        todasLasNoticias.length === 0
     ) {
 
-
-      if (
-        !url
-        ||
-        typeof url !== "string"
-      ) {
-
-        return "";
-
-      }
+        newsStatus.textContent =
+            "No hay noticias disponibles en este momento.";
 
 
-      try {
+        newsGrid.innerHTML = `
 
+            <div class="empty-news">
 
-        const enlace =
-          new URL(
-            url,
-            window.location.origin
-          );
+                <div class="empty-news-icon">
+                    📰
+                </div>
 
+                <h3>
+                    Próximamente publicaremos
+                    nuevas noticias y novedades
+                </h3>
 
-        if (
-          enlace.protocol ===
-            "https:"
-          ||
-          enlace.protocol ===
-            "http:"
-        ) {
+                <p>
+                    El sistema está preparado para recibir
+                    automáticamente las noticias de las
+                    fuentes oficiales configuradas.
+                </p>
 
-          return enlace.href;
+            </div>
 
-        }
+        `;
 
-
-        return "";
-
-
-      }
-
-      catch (
-        error
-      ) {
-
-
-        return "";
-
-
-      }
-
+        return;
 
     }
 
 
-    /* =====================================================
-       CARGAR NOTICIAS
-    ====================================================== */
+    newsStatus.textContent =
+        `${noticiasFiltradas.length} noticia(s) encontrada(s)`;
 
 
-    cargarNoticias();
+    if (
+        noticiasFiltradas.length === 0
+    ) {
+
+        newsGrid.innerHTML = `
+
+            <div class="empty-news">
+
+                <div class="empty-news-icon">
+                    🔎
+                </div>
+
+                <h3>
+                    No encontramos resultados
+                </h3>
+
+                <p>
+                    Pruebe con otra palabra o categoría.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
 
 
-  </script>
+    newsGrid.innerHTML =
+        noticiasFiltradas
+            .map(
+                crearTarjetaNoticia
+            )
+            .join("");
+
+}
+
+
+/* =========================================================
+   CREAR TARJETA DE NOTICIA
+========================================================= */
+
+function crearTarjetaNoticia(
+    noticia
+) {
+
+    const titulo =
+        escaparHTML(
+            noticia.titulo ||
+            "Sin título"
+        );
+
+
+    const descripcion =
+        escaparHTML(
+            noticia.descripcion ||
+            noticia.resumen ||
+            "Información disponible en la fuente original."
+        );
+
+
+    const categoria =
+        escaparHTML(
+            noticia.categoria ||
+            "Actualidad"
+        );
+
+
+    const fuente =
+        escaparHTML(
+            noticia.fuente ||
+            "Fuente oficial"
+        );
+
+
+    const fecha =
+        formatearFecha(
+            noticia.fecha ||
+            noticia.fecha_publicacion
+        );
+
+
+    const url =
+        noticia.url ||
+        noticia.enlace ||
+        "#";
+
+
+    return `
+
+        <article class="news-card">
+
+            <div class="news-card-header">
+
+                <span class="news-category">
+                    ${categoria}
+                </span>
+
+                <h3>
+                    ${titulo}
+                </h3>
+
+            </div>
+
+
+            <div class="news-card-body">
+
+                <p class="news-description">
+                    ${descripcion}
+                </p>
+
+
+                <div class="news-meta">
+
+                    <span>
+                        ${fecha}
+                    </span>
+
+                    <span class="news-source">
+                        ${fuente}
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="${url}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="news-link"
+                >
+                    Leer noticia original →
+                </a>
+
+            </div>
+
+        </article>
+
+    `;
+
+}
+
+
+/* =========================================================
+   FILTROS
+========================================================= */
+
+newsSearch.addEventListener(
+    "input",
+    mostrarNoticias
+);
+
+
+newsCategory.addEventListener(
+    "change",
+    mostrarNoticias
+);
+
+
+/* =========================================================
+   INICIALIZAR
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    cargarNoticias
+);
+
+
+</script>
 
 
 </body>
-
 </html>
