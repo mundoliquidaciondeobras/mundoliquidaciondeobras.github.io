@@ -12,12 +12,12 @@
 
   <meta
     name="description"
-    content="Mundo Liquidación de Obras. Consultoría, liquidación de obras, peritajes técnicos, tasaciones inmobiliarias y asesoría especializada."
+    content="Mundo Liquidación de Obras - Consultoría especializada en liquidación de obras, peritajes técnicos, tasaciones, contratación pública y asesoría en obras."
   >
 
   <meta
     name="keywords"
-    content="liquidación de obras, obras públicas, contratación pública, peritajes, tasaciones, reajustes, Ley 32069, Ley 30225"
+    content="liquidación de obras, obras públicas, contratación pública, peritajes, tasaciones, reajustes, valorizaciones, Ley 32069, Ley 30225"
   >
 
   <meta
@@ -30,7 +30,9 @@
   </title>
 
 
-  <!-- Google Fonts -->
+  <!-- =====================================================
+       FUENTES
+  ====================================================== -->
 
   <link
     rel="preconnect"
@@ -315,7 +317,7 @@
         center;
 
       gap:
-        26px;
+        24px;
 
       list-style:
         none;
@@ -376,9 +378,6 @@
       color:
         #111 !important;
 
-      transform:
-        translateY(-2px);
-
     }
 
 
@@ -412,7 +411,7 @@
     .hero {
 
       min-height:
-        470px;
+        500px;
 
       display:
         flex;
@@ -554,15 +553,11 @@
       transform:
         translateY(-3px);
 
-      box-shadow:
-        0 12px 25px
-        rgba(243, 156, 18, 0.4);
-
     }
 
 
     /* =====================================================
-       SECCIONES GENERALES
+       SECCIONES
     ===================================================== */
 
     section {
@@ -867,7 +862,7 @@
 
 
     /* =====================================================
-       MARCO NORMATIVO
+       NORMATIVA
     ===================================================== */
 
     .normativa {
@@ -1054,13 +1049,33 @@
 
 
     /* =====================================================
-       NOTICIAS Y NOVEDADES
+       NOTICIAS AUTOMÁTICAS
     ===================================================== */
 
     #noticias {
 
       background:
         var(--azul-claro);
+
+    }
+
+
+    .news-status {
+
+      max-width:
+        900px;
+
+      margin:
+        -20px auto 35px;
+
+      text-align:
+        center;
+
+      color:
+        #777;
+
+      font-size:
+        13px;
 
     }
 
@@ -1133,9 +1148,6 @@
       color:
         white;
 
-      min-height:
-        145px;
-
     }
 
 
@@ -1145,7 +1157,7 @@
         var(--naranja);
 
       font-size:
-        12px;
+        11px;
 
       font-weight:
         700;
@@ -1162,7 +1174,7 @@
     .news-top h3 {
 
       font-size:
-        19px;
+        18px;
 
       line-height:
         1.5;
@@ -1199,7 +1211,7 @@
         #999;
 
       font-size:
-        12px;
+        11px;
 
       margin-bottom:
         12px;
@@ -1249,7 +1261,7 @@
     }
 
 
-    .news-notice {
+    .news-message {
 
       max-width:
         850px;
@@ -1281,6 +1293,50 @@
       box-shadow:
         0 5px 15px
         rgba(0, 0, 0, 0.05);
+
+    }
+
+
+    /* =====================================================
+       ESTADOS DE NOTICIAS
+    ===================================================== */
+
+    .news-loading {
+
+      grid-column:
+        1 / -1;
+
+      text-align:
+        center;
+
+      padding:
+        50px;
+
+      color:
+        #777;
+
+    }
+
+
+    .news-error {
+
+      grid-column:
+        1 / -1;
+
+      text-align:
+        center;
+
+      padding:
+        40px;
+
+      background:
+        white;
+
+      border-radius:
+        10px;
+
+      color:
+        #777;
 
     }
 
@@ -1427,7 +1483,7 @@
 
 
     /* =====================================================
-       WHATSAPP FLOTANTE
+       WHATSAPP
     ===================================================== */
 
     .whatsapp-float {
@@ -1484,7 +1540,7 @@
 
 
     /* =====================================================
-       RESPONSIVE - TABLET
+       TABLET
     ===================================================== */
 
     @media (max-width: 1100px) {
@@ -1518,7 +1574,7 @@
 
 
     /* =====================================================
-       RESPONSIVE - MENÚ
+       MENÚ TABLET
     ===================================================== */
 
     @media (max-width: 850px) {
@@ -1607,7 +1663,7 @@
 
 
     /* =====================================================
-       RESPONSIVE - MÓVIL
+       MÓVIL
     ===================================================== */
 
     @media (max-width: 600px) {
@@ -1698,14 +1754,6 @@
       }
 
 
-      .news-top {
-
-        min-height:
-          auto;
-
-      }
-
-
       .whatsapp-float {
 
         right:
@@ -1725,7 +1773,6 @@
 
     }
 
-
   </style>
 
 </head>
@@ -1736,7 +1783,7 @@
 
   <!-- =====================================================
        HEADER
-  ===================================================== -->
+  ====================================================== -->
 
   <header>
 
@@ -1752,7 +1799,7 @@
 
         <img
           src="logo.png"
-          alt="Logo Mundo Liquidación de Obras"
+          alt="Mundo Liquidación de Obras"
           class="logo"
         >
 
@@ -1797,9 +1844,7 @@
         <li>
 
           <a href="#inicio">
-
             Inicio
-
           </a>
 
         </li>
@@ -1808,9 +1853,7 @@
         <li>
 
           <a href="#nosotros">
-
             Nosotros
-
           </a>
 
         </li>
@@ -1819,9 +1862,7 @@
         <li>
 
           <a href="#servicios">
-
             Servicios
-
           </a>
 
         </li>
@@ -1830,9 +1871,7 @@
         <li>
 
           <a href="#biblioteca">
-
             Biblioteca
-
           </a>
 
         </li>
@@ -1841,16 +1880,13 @@
         <li>
 
           <a href="#noticias">
-
             Noticias
-
           </a>
 
         </li>
 
 
         <li>
-
 
           <a
             href="https://wa.me/51966630042"
@@ -1862,7 +1898,6 @@
             Contacto
 
           </a>
-
 
         </li>
 
@@ -1877,15 +1912,15 @@
 
 
   <!-- =====================================================
-       CONTENIDO PRINCIPAL
-  ===================================================== -->
+       CONTENIDO
+  ====================================================== -->
 
   <main>
 
 
-    <!-- =====================================================
+    <!-- ===================================================
          INICIO
-    ===================================================== -->
+    ==================================================== -->
 
     <section
       class="hero"
@@ -1920,7 +1955,7 @@
 
 
         <a
-          href="https://wa.me/51966630042"
+          href="https://wa.me/51966630042?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios."
           target="_blank"
           rel="noopener noreferrer"
           class="btn-principal"
@@ -1937,9 +1972,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- ===================================================
          NOSOTROS
-    ===================================================== -->
+    ==================================================== -->
 
     <section id="nosotros">
 
@@ -1972,14 +2007,13 @@
 
           <h3>
 
-            Experiencia y Rigor Técnico
-            al Servicio de sus Proyectos
+            Experiencia y rigor técnico
+            al servicio de sus proyectos
 
           </h3>
 
 
           <p>
-
 
             En
             <strong>
@@ -1991,12 +2025,10 @@
             liquidaciones y tasaciones
             inmobiliarias.
 
-
           </p>
 
 
           <p>
-
 
             Nuestro objetivo es brindar
             soluciones técnicas y especializadas
@@ -2005,19 +2037,16 @@
             relacionadas con proyectos
             de construcción.
 
-
           </p>
 
 
           <p>
-
 
             Analizamos documentación contractual,
             expedientes técnicos, valorizaciones,
             liquidaciones y controversias,
             buscando soluciones claras,
             sustentadas y técnicamente consistentes.
-
 
           </p>
 
@@ -2032,21 +2061,17 @@
 
 
             <h3>
-
               🎯 Misión
-
             </h3>
 
 
             <p>
-
 
               Ofrecer soporte técnico especializado
               para la eficiente gestión de
               liquidaciones, valorizaciones,
               peritajes y controversias relacionadas
               con proyectos de construcción.
-
 
             </p>
 
@@ -2058,20 +2083,16 @@
 
 
             <h3>
-
               👁️ Visión
-
             </h3>
 
 
             <p>
 
-
               Ser una plataforma de referencia
               nacional en consultoría técnica,
               liquidación de obras, peritajes
               y tasaciones.
-
 
             </p>
 
@@ -2088,9 +2109,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- ===================================================
          SERVICIOS
-    ===================================================== -->
+    ==================================================== -->
 
     <section id="servicios">
 
@@ -2099,9 +2120,7 @@
 
 
         <h2>
-
           Nuestros Servicios Especializados
-
         </h2>
 
 
@@ -2128,21 +2147,17 @@
 
 
           <h3>
-
             Consultoría en Liquidación
             de Obras
-
           </h3>
 
 
           <p>
 
-
             Elaboración y revisión
             técnico-financiera de expedientes
             de liquidación de contratos
             de obra pública y privada.
-
 
           </p>
 
@@ -2159,20 +2174,16 @@
 
 
           <h3>
-
             Reajustes, GG y Penalidades
-
           </h3>
 
 
           <p>
 
-
             Análisis y cálculo de reajustes,
             fórmulas polinómicas, mayores
             gastos generales, adicionales,
             deductivos e intereses.
-
 
           </p>
 
@@ -2189,19 +2200,15 @@
 
 
           <h3>
-
             Tasaciones Inmobiliarias
-
           </h3>
 
 
           <p>
 
-
             Valuación comercial y reglamentaria
             de terrenos, inmuebles,
             infraestructura y activos.
-
 
           </p>
 
@@ -2218,20 +2225,16 @@
 
 
           <h3>
-
             Peritajes Técnicos
             y Arbitraje
-
           </h3>
 
 
           <p>
 
-
             Elaboración de informes periciales
             para controversias, conciliaciones,
             JPRD y procesos arbitrales.
-
 
           </p>
 
@@ -2248,19 +2251,15 @@
 
 
           <h3>
-
             Capacitación y Asesoría
-
           </h3>
 
 
           <p>
 
-
             Capacitación y orientación técnica
             relacionada con contratación pública,
             obras, contratos y liquidaciones.
-
 
           </p>
 
@@ -2277,20 +2276,16 @@
 
 
           <h3>
-
             Revisión de Expedientes
-
           </h3>
 
 
           <p>
 
-
             Análisis técnico-documentario
             de contratos, expedientes,
             valorizaciones y documentación
             relacionada con la obra.
-
 
           </p>
 
@@ -2308,16 +2303,12 @@
 
 
           <h3>
-
             Marco Normativo
-
           </h3>
 
 
           <p>
-
             Ley N.° 32069 y normativa aplicable
-
           </p>
 
 
@@ -2328,16 +2319,12 @@
 
 
           <h3>
-
             Liquidaciones
-
           </h3>
 
 
           <p>
-
             Análisis técnico y financiero
-
           </p>
 
 
@@ -2348,16 +2335,12 @@
 
 
           <h3>
-
             Peritajes
-
           </h3>
 
 
           <p>
-
             Soporte técnico en controversias
-
           </p>
 
 
@@ -2370,9 +2353,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- ===================================================
          BIBLIOTECA
-    ===================================================== -->
+    ==================================================== -->
 
     <section id="biblioteca">
 
@@ -2381,9 +2364,7 @@
 
 
         <h2>
-
           Biblioteca Técnica
-
         </h2>
 
 
@@ -2405,20 +2386,16 @@
 
 
           <h3>
-
             📜 Ley N.° 32069
-
           </h3>
 
 
           <p>
-
 
             Información y recursos relacionados
             con la normativa vigente de
             contratación pública.
 
-
           </p>
 
 
@@ -2439,20 +2416,16 @@
 
 
           <h3>
-
             📘 Ley N.° 30225
-
           </h3>
 
 
           <p>
-
 
             Información de referencia sobre
             el marco normativo anterior de
             contrataciones.
 
-
           </p>
 
 
@@ -2473,19 +2446,15 @@
 
 
           <h3>
-
             📊 Formatos de Liquidación
-
           </h3>
 
 
           <p>
 
-
             Modelos y herramientas para
             análisis de liquidaciones,
             reajustes y valorizaciones.
-
 
           </p>
 
@@ -2509,19 +2478,15 @@
 
 
           <h3>
-
             🏠 Tasaciones
-
           </h3>
 
 
           <p>
 
-
             Información sobre criterios
             técnicos y metodologías de
             valuación inmobiliaria.
-
 
           </p>
 
@@ -2545,9 +2510,9 @@
     </section>
 
 
-    <!-- =====================================================
-         NOTICIAS Y NOVEDADES
-    ===================================================== -->
+    <!-- ===================================================
+         NOTICIAS AUTOMÁTICAS
+    ==================================================== -->
 
     <section id="noticias">
 
@@ -2556,16 +2521,15 @@
 
 
         <h2>
-
           Noticias y Novedades
-
         </h2>
 
 
         <p>
 
-          Información y actualidad relacionada
-          con nuestros servicios especializados
+          Información actualizada sobre
+          obras, contratación pública,
+          liquidaciones y temas relacionados.
 
         </p>
 
@@ -2573,397 +2537,43 @@
       </div>
 
 
-      <div class="news-grid">
+      <div
+        id="news-status"
+        class="news-status"
+      >
 
+        Cargando información...
 
-        <article class="news-card">
+      </div>
 
 
-          <div class="news-top">
+      <div
+        id="news-grid"
+        class="news-grid"
+      >
 
 
-            <span class="news-category">
+        <div class="news-loading">
 
-              CONTRATACIÓN PÚBLICA
+          📰
 
-            </span>
+          <br><br>
 
+          Cargando las últimas noticias...
 
-            <h3>
-
-              Novedades en contratación
-              pública
-
-            </h3>
-
-
-          </div>
-
-
-          <div class="news-body">
-
-
-            <span class="news-date">
-
-              Información de actualidad
-
-            </span>
-
-
-            <p>
-
-
-              Mantente informado sobre
-              novedades, criterios y cambios
-              relacionados con la contratación
-              pública y la ejecución de obras.
-
-
-            </p>
-
-
-            <a
-              href="#contacto"
-              class="news-link"
-            >
-
-              Consultar información →
-
-            </a>
-
-
-          </div>
-
-
-        </article>
-
-
-        <article class="news-card">
-
-
-          <div class="news-top">
-
-
-            <span class="news-category">
-
-              NORMATIVA
-
-            </span>
-
-
-            <h3>
-
-              Normas y disposiciones
-              relevantes
-
-            </h3>
-
-
-          </div>
-
-
-          <div class="news-body">
-
-
-            <span class="news-date">
-
-              Información de actualidad
-
-            </span>
-
-
-            <p>
-
-
-              Seguimiento de novedades
-              normativas que pueden influir
-              en contratos y liquidaciones
-              de obras.
-
-
-            </p>
-
-
-            <a
-              href="#contacto"
-              class="news-link"
-            >
-
-              Consultar información →
-
-            </a>
-
-
-          </div>
-
-
-        </article>
-
-
-        <article class="news-card">
-
-
-          <div class="news-top">
-
-
-            <span class="news-category">
-
-              LIQUIDACIÓN DE OBRAS
-
-            </span>
-
-
-            <h3>
-
-              Liquidaciones y reajustes
-              de contratos
-
-            </h3>
-
-
-          </div>
-
-
-          <div class="news-body">
-
-
-            <span class="news-date">
-
-              Información de actualidad
-
-            </span>
-
-
-            <p>
-
-
-              Contenido técnico relacionado
-              con liquidaciones, reajustes,
-              fórmulas polinómicas y
-              mayores gastos generales.
-
-
-            </p>
-
-
-            <a
-              href="#contacto"
-              class="news-link"
-            >
-
-              Consultar información →
-
-            </a>
-
-
-          </div>
-
-
-        </article>
-
-
-        <article class="news-card">
-
-
-          <div class="news-top">
-
-
-            <span class="news-category">
-
-              PERITAJES
-
-            </span>
-
-
-            <h3>
-
-              Peritajes técnicos y
-              controversias
-
-            </h3>
-
-
-          </div>
-
-
-          <div class="news-body">
-
-
-            <span class="news-date">
-
-              Información de actualidad
-
-            </span>
-
-
-            <p>
-
-
-              Información especializada
-              sobre peritajes, controversias,
-              conciliaciones y arbitrajes.
-
-
-            </p>
-
-
-            <a
-              href="#contacto"
-              class="news-link"
-            >
-
-              Consultar información →
-
-            </a>
-
-
-          </div>
-
-
-        </article>
-
-
-        <article class="news-card">
-
-
-          <div class="news-top">
-
-
-            <span class="news-category">
-
-              TASACIONES
-
-            </span>
-
-
-            <h3>
-
-              Actualidad del sector
-              inmobiliario
-
-            </h3>
-
-
-          </div>
-
-
-          <div class="news-body">
-
-
-            <span class="news-date">
-
-              Información de actualidad
-
-            </span>
-
-
-            <p>
-
-
-              Información relacionada con
-              valuaciones, tasaciones y
-              criterios técnicos aplicables
-              a bienes inmuebles.
-
-
-            </p>
-
-
-            <a
-              href="#contacto"
-              class="news-link"
-            >
-
-              Consultar información →
-
-            </a>
-
-
-          </div>
-
-
-        </article>
-
-
-        <article class="news-card">
-
-
-          <div class="news-top">
-
-
-            <span class="news-category">
-
-              OBRAS PÚBLICAS
-
-            </span>
-
-
-            <h3>
-
-              Noticias del sector
-              construcción
-
-            </h3>
-
-
-          </div>
-
-
-          <div class="news-body">
-
-
-            <span class="news-date">
-
-              Información de actualidad
-
-            </span>
-
-
-            <p>
-
-
-              Seguimiento de información
-              relevante para profesionales
-              y empresas vinculadas al
-              sector construcción.
-
-
-            </p>
-
-
-            <a
-              href="#contacto"
-              class="news-link"
-            >
-
-              Consultar información →
-
-            </a>
-
-
-          </div>
-
-
-        </article>
+        </div>
 
 
       </div>
 
 
-      <div class="news-notice">
+      <div
+        id="news-message"
+        class="news-message"
+      >
 
-
-        <strong>
-          Próximamente:
-        </strong>
-
-
-        esta sección podrá actualizarse
-        automáticamente con información
-        relevante de fuentes oficiales
-        relacionadas con contratación pública,
-        obras y normativa.
-
+        Las noticias se actualizan automáticamente
+        a partir de las fuentes configuradas.
 
       </div>
 
@@ -2971,9 +2581,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- ===================================================
          CONTACTO
-    ===================================================== -->
+    ==================================================== -->
 
     <section id="contacto">
 
@@ -2982,9 +2592,7 @@
 
 
         <h2>
-
           ¿Necesita asesoría especializada?
-
         </h2>
 
 
@@ -3029,7 +2637,7 @@
 
 
         <a
-          href="https://wa.me/51966630042"
+          href="https://wa.me/51966630042?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios."
           target="_blank"
           rel="noopener noreferrer"
           class="btn-principal"
@@ -3051,7 +2659,7 @@
 
   <!-- =====================================================
        FOOTER
-  ===================================================== -->
+  ====================================================== -->
 
   <footer>
 
@@ -3059,6 +2667,7 @@
     <p>
 
       © 2026
+
       <strong>
         Mundo Liquidación de Obras
       </strong>
@@ -3087,10 +2696,10 @@
 
   <!-- =====================================================
        WHATSAPP FLOTANTE
-  ===================================================== -->
+  ====================================================== -->
 
   <a
-    href="https://wa.me/51966630042"
+    href="https://wa.me/51966630042?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios."
     target="_blank"
     rel="noopener noreferrer"
     class="whatsapp-float"
@@ -3104,22 +2713,26 @@
 
   <!-- =====================================================
        JAVASCRIPT
-  ===================================================== -->
+  ====================================================== -->
 
   <script>
 
 
-    /* ==========================================
+    /* =====================================================
        MENÚ MÓVIL
-    ========================================== */
+    ====================================================== */
 
 
     const menuBtn =
-      document.getElementById("menuBtn");
+      document.getElementById(
+        "menuBtn"
+      );
 
 
     const navMenu =
-      document.getElementById("navMenu");
+      document.getElementById(
+        "navMenu"
+      );
 
 
     menuBtn.addEventListener(
@@ -3148,13 +2761,10 @@
     );
 
 
-    /* ==========================================
-       CERRAR MENÚ AL HACER CLIC
-    ========================================== */
-
-
     document
-      .querySelectorAll(".nav-menu a")
+      .querySelectorAll(
+        ".nav-menu a"
+      )
       .forEach(
         function(link) {
 
@@ -3181,6 +2791,399 @@
 
         }
       );
+
+
+    /* =====================================================
+       NOTICIAS AUTOMÁTICAS
+    ====================================================== */
+
+
+    async function cargarNoticias() {
+
+
+      const contenedor =
+        document.getElementById(
+          "news-grid"
+        );
+
+
+      const estado =
+        document.getElementById(
+          "news-status"
+        );
+
+
+      const mensaje =
+        document.getElementById(
+          "news-message"
+        );
+
+
+      try {
+
+
+        const respuesta =
+          await fetch(
+            "noticias.json?v=" +
+            Date.now()
+          );
+
+
+        if (
+          !respuesta.ok
+        ) {
+
+          throw new Error(
+            "No se pudo cargar noticias.json"
+          );
+
+        }
+
+
+        const datos =
+          await respuesta.json();
+
+
+        contenedor.innerHTML =
+          "";
+
+
+        const noticias =
+          Array.isArray(
+            datos.noticias
+          )
+          ? datos.noticias
+          : [];
+
+
+        if (
+          noticias.length === 0
+        ) {
+
+
+          contenedor.innerHTML = `
+
+            <div class="news-error">
+
+              📰
+
+              <br><br>
+
+              Próximamente publicaremos
+              nuevas noticias y novedades.
+
+            </div>
+
+          `;
+
+
+          estado.textContent =
+            "No hay noticias disponibles en este momento.";
+
+
+        } else {
+
+
+          noticias.forEach(
+            function(noticia) {
+
+
+              const tarjeta =
+                document.createElement(
+                  "article"
+                );
+
+
+              tarjeta.className =
+                "news-card";
+
+
+              const titulo =
+                escaparHTML(
+                  noticia.titulo ||
+                  "Nueva noticia"
+                );
+
+
+              const categoria =
+                escaparHTML(
+                  noticia.categoria ||
+                  "Actualidad"
+                );
+
+
+              const resumen =
+                escaparHTML(
+                  noticia.resumen ||
+                  "Consulte la información completa en la fuente oficial."
+                );
+
+
+              const fecha =
+                escaparHTML(
+                  noticia.fecha ||
+                  ""
+                );
+
+
+              const fuente =
+                escaparHTML(
+                  noticia.fuente ||
+                  "Fuente oficial"
+                );
+
+
+              const url =
+                validarURL(
+                  noticia.url
+                );
+
+
+              tarjeta.innerHTML = `
+
+                <div class="news-top">
+
+                  <span class="news-category">
+
+                    ${categoria}
+
+                  </span>
+
+
+                  <h3>
+
+                    ${titulo}
+
+                  </h3>
+
+                </div>
+
+
+                <div class="news-body">
+
+                  <span class="news-date">
+
+                    ${fecha}
+
+                    ${fecha ? " · " : ""}
+
+                    ${fuente}
+
+                  </span>
+
+
+                  <p>
+
+                    ${resumen}
+
+                  </p>
+
+
+                  ${
+                    url
+                    ?
+
+                    `
+
+                    <a
+
+                      href="${url}"
+
+                      target="_blank"
+
+                      rel="noopener noreferrer"
+
+                      class="news-link"
+
+                    >
+
+                      Leer noticia →
+
+                    </a>
+
+                    `
+
+                    :
+
+                    ""
+
+                  }
+
+                </div>
+
+              `;
+
+
+              contenedor.appendChild(
+                tarjeta
+              );
+
+
+            }
+          );
+
+
+          estado.textContent =
+
+            datos.actualizado
+
+            ?
+
+            "Última actualización: " +
+            datos.actualizado
+
+            :
+
+            "Información actualizada automáticamente.";
+
+
+        }
+
+
+      }
+
+      catch (
+        error
+      ) {
+
+
+        console.error(
+          "Error cargando noticias:",
+          error
+        );
+
+
+        contenedor.innerHTML = `
+
+          <div class="news-error">
+
+            No se pudieron cargar
+            las noticias en este momento.
+
+            <br><br>
+
+            Vuelva a visitar esta sección
+            más tarde.
+
+          </div>
+
+        `;
+
+
+        estado.textContent =
+          "Información temporalmente no disponible.";
+
+
+        mensaje.innerHTML = `
+
+          Las noticias se actualizarán
+          automáticamente cuando el sistema
+          vuelva a estar disponible.
+
+        `;
+
+
+      }
+
+
+    }
+
+
+    /* =====================================================
+       SEGURIDAD PARA TEXTO
+    ====================================================== */
+
+
+    function escaparHTML(
+      texto
+    ) {
+
+
+      const div =
+        document.createElement(
+          "div"
+        );
+
+
+      div.textContent =
+        texto;
+
+
+      return div.innerHTML;
+
+
+    }
+
+
+    /* =====================================================
+       VALIDAR ENLACES
+    ====================================================== */
+
+
+    function validarURL(
+      url
+    ) {
+
+
+      if (
+        !url
+        ||
+        typeof url !== "string"
+      ) {
+
+        return "";
+
+      }
+
+
+      try {
+
+
+        const enlace =
+          new URL(
+            url,
+            window.location.origin
+          );
+
+
+        if (
+          enlace.protocol ===
+            "https:"
+          ||
+          enlace.protocol ===
+            "http:"
+        ) {
+
+          return enlace.href;
+
+        }
+
+
+        return "";
+
+
+      }
+
+      catch (
+        error
+      ) {
+
+
+        return "";
+
+
+      }
+
+
+    }
+
+
+    /* =====================================================
+       CARGAR NOTICIAS
+    ====================================================== */
+
+
+    cargarNoticias();
 
 
   </script>
