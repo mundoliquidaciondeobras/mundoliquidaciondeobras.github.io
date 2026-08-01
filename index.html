@@ -1,458 +1,1062 @@
-<title>Mundo Liquidación de Obras | Consultoría, Peritajes y Tasaciones</title> <style> :root { --azul-principal: #0b3c5d; --azul-oscuro: #07253a; --naranja-acento: #f39c12; --blanco: #ffffff; --gris-claro: #f4f6f9; --texto: #333333; }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mundo Liquidación de Obras | Consultoría, Peritajes y Tasaciones</title>
+
+  <meta name="description" content="Mundo Liquidación de Obras. Consultoría, peritajes, liquidación de obras, reajustes, tasaciones inmobiliarias y asesoría técnico-legal.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --azul-principal: #0b3c5d;
+      --azul-oscuro: #072b43;
+      --azul-hero: #214d68;
+      --naranja: #f39c12;
+      --naranja-hover: #e68a00;
+      --blanco: #ffffff;
+      --gris-claro: #f4f6f9;
+      --gris: #e9eef3;
+      --texto: #333333;
+      --sombra: 0 8px 25px rgba(7, 43, 67, 0.10);
+    }
+
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     html {
-        scroll-behavior: smooth;
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
     }
 
     body {
-        background-color: var(--gris-claro);
-        color: var(--texto);
-        line-height: 1.6;
+      font-family: "Poppins", sans-serif;
+      color: var(--texto);
+      background: var(--gris-claro);
+      line-height: 1.7;
     }
 
-    /* Encabezado */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
     header {
-        background-color: var(--azul-principal);
-        color: var(--blanco);
-        padding: 1rem 5%;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--azul-principal);
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar {
+      max-width: 1400px;
+      margin: auto;
+      min-height: 78px;
+      padding: 10px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
     }
 
     .logo {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+      background: white;
+      border-radius: 8px;
+      padding: 4px;
+      flex-shrink: 0;
     }
 
-    .logo-img {
-        height: 55px;
-        width: auto;
-        border-radius: 6px;
-        object-fit: contain;
-        background-color: var(--blanco);
-        padding: 2px;
+    .brand {
+      color: white;
     }
 
-    .logo h1 {
-        font-size: 1.3rem;
-        color: var(--blanco);
-        font-weight: 700;
-        line-height: 1.2;
+    .brand h1 {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: 0.2px;
     }
 
-    .logo p {
-        font-size: 0.75rem;
-        color: var(--naranja-acento);
+    .brand p {
+      color: var(--naranja);
+      font-size: 11px;
+      font-weight: 500;
+      margin-top: 2px;
     }
 
-    nav ul {
-        display: flex;
-        list-style: none;
-        gap: 20px;
-        align-items: center;
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
     }
 
-    nav a {
-        color: var(--blanco);
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 0.95rem;
-        transition: 0.3s;
+    .nav-menu a {
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.3s;
     }
 
-    nav a:hover {
-        color: var(--naranja-acento);
+    .nav-menu a:hover {
+      color: var(--naranja);
     }
 
-    .nav-btn {
-        background-color: var(--naranja-acento);
-        color: var(--azul-oscuro) !important;
-        padding: 8px 18px;
-        border-radius: 20px;
-        font-weight: 600;
+    .nav-contacto {
+      background: var(--naranja);
+      color: #111 !important;
+      padding: 9px 22px;
+      border-radius: 30px;
+      font-weight: 700 !important;
     }
 
-    .nav-btn:hover {
-        background-color: #d68910;
+    .nav-contacto:hover {
+      background: var(--naranja-hover);
+      color: #111 !important;
+      transform: translateY(-2px);
     }
 
-    /* Banner Principal (Hero) */
+    .menu-btn {
+      display: none;
+      border: none;
+      background: transparent;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
     .hero {
-        background: linear-gradient(rgba(11, 60, 93, 0.88), rgba(7, 37, 58, 0.92)), 
-                    url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80') center/cover;
-        color: var(--blanco);
-        text-align: center;
-        padding: 90px 20px;
+      background: linear-gradient(
+        135deg,
+        var(--azul-hero) 0%,
+        var(--azul-principal) 100%
+      );
+      color: white;
+      min-height: 410px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero-content {
+      max-width: 1100px;
+      margin: auto;
     }
 
     .hero h2 {
-        font-size: 2.2rem;
-        margin-bottom: 15px;
-        font-weight: 700;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.25;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .hero-line {
+      width: 100%;
+      max-width: 850px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.45);
+      margin: 0 auto 22px;
     }
 
     .hero p {
-        font-size: 1.05rem;
-        max-width: 800px;
-        margin: 0 auto 30px;
-        opacity: 0.9;
+      max-width: 850px;
+      margin: 0 auto 30px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #f4f7fa;
     }
 
-    .btn-cta {
-        display: inline-block;
-        background-color: var(--naranja-acento);
-        color: var(--azul-oscuro);
-        padding: 14px 32px;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 30px;
-        transition: 0.3s;
-        box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
+    .btn-principal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--naranja);
+      color: #111;
+      padding: 14px 30px;
+      border-radius: 35px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(243, 156, 18, 0.30);
     }
 
-    .btn-cta:hover {
-        background-color: #e08e0b;
-        transform: translateY(-2px);
+    .btn-principal:hover {
+      background: var(--naranja-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(243, 156, 18, 0.40);
     }
 
-    /* Contenedores de Secciones */
-    .section-padding {
-        padding: 60px 20px;
-    }
+    /* =========================
+       SECCIONES
+    ========================= */
 
-    .container {
-        max-width: 1150px;
-        margin: 0 auto;
+    section {
+      padding: 75px 20px;
     }
 
     .section-title {
-        text-align: center;
-        color: var(--azul-principal);
-        margin-bottom: 10px;
-        font-size: 1.9rem;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 45px;
     }
 
-    .section-subtitle {
-        text-align: center;
-        color: #666;
-        margin-bottom: 40px;
-        font-size: 1rem;
+    .section-title h2 {
+      color: var(--azul-principal);
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: 800;
+      margin-bottom: 10px;
     }
 
-    /* Sección Nosotros */
-    .nosotros-content {
-        background: var(--blanco);
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        align-items: center;
+    .section-title p {
+      color: #666;
+      font-size: 16px;
+    }
+
+    /* =========================
+       NOSOTROS
+    ========================= */
+
+    #nosotros {
+      background: var(--gris-claro);
+    }
+
+    .nosotros-box {
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      padding: 45px;
+      box-shadow: var(--sombra);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
     }
 
     .nosotros-text h3 {
-        color: var(--azul-principal);
-        margin-bottom: 15px;
-        font-size: 1.4rem;
+      color: var(--azul-principal);
+      font-size: 23px;
+      line-height: 1.5;
+      margin-bottom: 20px;
     }
 
     .nosotros-text p {
-        color: #555;
-        margin-bottom: 15px;
-        font-size: 0.95rem;
+      font-size: 15px;
+      margin-bottom: 18px;
+      color: #555;
     }
 
-    /* Grilla de Servicios */
+    .mision-vision {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .info-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 22px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+      border-left: 5px solid var(--naranja);
+    }
+
+    .info-card.vision {
+      border-left-color: var(--azul-principal);
+    }
+
+    .info-card h3 {
+      color: var(--azul-principal);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .info-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* =========================
+       SERVICIOS
+    ========================= */
+
+    #servicios {
+      background: #edf3f7;
+    }
+
     .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
     }
 
-    .card {
-        background: var(--blanco);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        border-top: 5px solid var(--naranja-acento);
-        transition: 0.3s;
-        display: flex;
-        flex-direction: column;
+    .service-card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: var(--sombra);
+      border-top: 5px solid var(--naranja);
+      transition: 0.3s;
     }
 
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 30px rgba(7, 43, 67, 0.15);
     }
 
-    .card h3 {
-        color: var(--azul-principal);
-        margin-bottom: 12px;
-        font-size: 1.2rem;
+    .service-icon {
+      font-size: 25px;
+      margin-bottom: 12px;
     }
 
-    .card p {
-        color: #555;
-        font-size: 0.92rem;
-        line-height: 1.5;
+    .service-card h3 {
+      color: var(--azul-principal);
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 12px;
     }
 
-    /* Sección Biblioteca */
-    .biblioteca-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
+    .service-card p {
+      color: #555;
+      font-size: 14px;
     }
 
-    .doc-card {
-        background: var(--blanco);
-        padding: 20px;
-        border-radius: 8px;
-        border-left: 4px solid var(--azul-principal);
-        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    /* =========================
+       MARCO NORMATIVO
+    ========================= */
+
+    .normativa {
+      max-width: 1100px;
+      margin: 40px auto 0;
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: var(--sombra);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
     }
 
-    .doc-card h4 {
-        color: var(--azul-oscuro);
-        font-size: 1.05rem;
-        margin-bottom: 8px;
+    .normativa-item h3 {
+      color: var(--naranja);
+      font-size: 22px;
+      margin-bottom: 5px;
     }
 
-    .doc-card p {
-        color: #666;
-        font-size: 0.85rem;
-        margin-bottom: 15px;
+    .normativa-item p {
+      color: var(--azul-principal);
+      font-weight: 600;
+      font-size: 13px;
     }
 
-    .btn-doc {
-        display: inline-block;
-        color: var(--naranja-acento);
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 0.85rem;
+    /* =========================
+       BIBLIOTECA
+    ========================= */
+
+    #biblioteca {
+      background: var(--gris-claro);
     }
 
-    .btn-doc:hover {
-        text-decoration: underline;
+    .library-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
     }
 
-    /* Bloque de Métricas */
-    .features {
-        background-color: var(--blanco);
-        padding: 40px 20px;
-        margin-top: 40px;
-        border-radius: 10px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        text-align: center;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    .library-card {
+      background: white;
+      border-left: 4px solid var(--azul-principal);
+      border-radius: 8px;
+      padding: 25px 22px;
+      box-shadow: 0 5px 18px rgba(7, 43, 67, 0.08);
+      transition: 0.3s;
     }
 
-    .feature-item h4 {
-        color: var(--naranja-acento);
-        font-size: 1.6rem;
-        font-weight: 700;
+    .library-card:hover {
+      transform: translateY(-4px);
     }
 
-    .feature-item p {
-        color: var(--azul-oscuro);
-        font-weight: 600;
-        font-size: 0.88rem;
+    .library-card h3 {
+      color: var(--azul-principal);
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 12px;
     }
 
-    /* Pie de página */
+    .library-card p {
+      color: #666;
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .library-link {
+      color: var(--naranja);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .library-link:hover {
+      color: var(--naranja-hover);
+    }
+
+    /* =========================
+       CONTACTO
+    ========================= */
+
+    #contacto {
+      background: var(--azul-principal);
+      color: white;
+      text-align: center;
+    }
+
+    #contacto .section-title h2 {
+      color: white;
+    }
+
+    #contacto .section-title p {
+      color: #dce8ef;
+    }
+
+    .contact-info {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .contact-info p {
+      margin-bottom: 25px;
+      font-size: 15px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
     footer {
-        background-color: var(--azul-oscuro);
-        color: var(--blanco);
-        text-align: center;
-        padding: 25px 20px;
-        margin-top: 60px;
-        font-size: 0.9rem;
+      background: var(--azul-oscuro);
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 13px;
     }
 
-    /* Botón Flotante de WhatsApp */
-    .btn-whatsapp {
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-        background-color: #25d366;
-        color: white;
-        border-radius: 50px;
-        padding: 12px 22px;
-        text-decoration: none;
-        font-weight: bold;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    /* =========================
+       WHATSAPP FLOTANTE
+    ========================= */
+
+    .whatsapp-float {
+      position: fixed;
+      right: 25px;
+      bottom: 20px;
+      z-index: 2000;
+      background: #25d366;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 35px;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+      transition: 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-3px);
+      background: #20bd5a;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 1000px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .library-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 800px) {
+      .navbar {
+        padding: 10px 20px;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--azul-principal);
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .nav-menu.active {
         display: flex;
-        align-items: center;
-        gap: 8px;
-        z-index: 1000;
+      }
+
+      .nosotros-box {
+        grid-template-columns: 1fr;
+        padding: 30px;
+        gap: 30px;
+      }
+
+      .normativa {
+        grid-template-columns: 1fr;
+      }
     }
 
-    .btn-whatsapp:hover {
-        background-color: #128c7e;
-    }
+    @media (max-width: 600px) {
+      .brand h1 {
+        font-size: 15px;
+      }
 
-    @media (max-width: 768px) {
-        header {
-            flex-direction: column;
-            gap: 15px;
-        }
-        nav ul {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .hero h2 {
-            font-size: 1.6rem;
-        }
+      .brand p {
+        font-size: 9px;
+      }
+
+      .logo {
+        width: 48px;
+        height: 48px;
+      }
+
+      .hero {
+        padding: 60px 18px;
+      }
+
+      .hero h2 {
+        font-size: 29px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      section {
+        padding: 55px 15px;
+      }
+
+      .nosotros-box {
+        padding: 25px;
+      }
+
+      .services-grid,
+      .library-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+        padding: 11px 17px;
+        font-size: 13px;
+      }
     }
-</style>
-<!-- Header con Logotipo y Menú -->
-<header>
-    <div class="logo">
-        <img src="logo liqui.jpeg" alt="Mundo Liquidación de Obras" class="logo-img">
-        <div>
-            <h1>MUNDO LIQUIDACIÓN DE OBRAS</h1>
-            <p>Conocimiento técnico que genera confianza</p>
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header>
+    <nav class="navbar">
+
+      <a href="#inicio" class="logo-area">
+        <img src="logo.png" alt="Mundo Liquidación de Obras" class="logo">
+
+        <div class="brand">
+          <h1>MUNDO LIQUIDACIÓN DE OBRAS</h1>
+          <p>Conocimiento técnico que genera confianza</p>
         </div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#biblioteca">Biblioteca</a></li>
-            <li><a href="https://wa.me/51966630042" class="nav-btn" target="_blank">Contacto</a></li>
-        </ul>
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#biblioteca">Biblioteca</a></li>
+        <li>
+          <a
+            href="https://wa.me/51966630042"
+            target="_blank"
+            class="nav-contacto"
+          >
+            Contacto
+          </a>
+        </li>
+      </ul>
+
     </nav>
-</header>
+  </header>
 
-<!-- INICIO / HERO BANNER -->
-<section id="inicio" class="hero">
-    <h2>Consultoría, Peritajes, Liquidación de Obras y Tasaciones Inmobiliarias</h2>
-    <p>Asesoría técnica y legal especializada bajo la Ley N.° 32069, Ley N.° 30225 y reglamentos anteriores. Elaboración, revisión y sustentación pericial de expedientes en contratación pública y privada.</p>
-    <a href="https://wa.me/51966630042?text=Hola,%20deseo%20consultar%20sobre%20un%20servicio" class="btn-cta" target="_blank">Consultar por WhatsApp</a>
-</section>
 
-<!-- NOSOTROS -->
-<section id="nosotros" class="section-padding container">
-    <h2 class="section-title">Sobre Nosotros</h2>
-    <p class="section-subtitle">Especialistas en ingeniería técnico-legal en obras públicas y privadas</p>
-    
-    <div class="nosotros-content">
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <main>
+
+    <section class="hero" id="inicio">
+
+      <div class="hero-content">
+
+        <h2>
+          Consultoría, Peritajes, Liquidación de Obras y Tasaciones Inmobiliarias
+        </h2>
+
+        <div class="hero-line"></div>
+
+        <p>
+          Asesoría técnica y legal especializada bajo la Ley N.° 32069,
+          Ley N.° 30225 y reglamentos anteriores. Elaboración, revisión
+          y sustentación pericial de expedientes en contratación pública
+          y privada.
+        </p>
+
+        <a
+          href="https://wa.me/51966630042"
+          target="_blank"
+          class="btn-principal"
+        >
+          Consultar por WhatsApp
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         NOSOTROS
+    ========================= -->
+
+    <section id="nosotros">
+
+      <div class="section-title">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          Especialistas en ingeniería técnico-legal en obras públicas y privadas
+        </p>
+      </div>
+
+      <div class="nosotros-box">
+
         <div class="nosotros-text">
-            <h3>Experiencia y Rigor Técnico al Servicio de sus Proyectos</h3>
-            <p>En **Mundo Liquidación de Obras** brindamos servicios integrales de consultoría, peritajes, valorizaciones, reajustes, liquidaciones y tasaciones inmobiliarias en todo el Perú.</p>
-            <p>Contamos con un dominio exhaustivo del marco normativo vigente (Ley N.° 32069) y marcos normativos históricos de Contrataciones del Estado (Ley N.° 30225 y sus reglamentos), asegurando soluciones sólidas ante entidades públicas, contratistas, JPRD y tribunales arbitrales.</p>
-        </div>
-        <div>
-            <div class="doc-card" style="border-left-color: var(--naranja-acento);">
-                <h4>🎯 Misión</h4>
-                <p>Ofrecer soporte técnico-legal riguroso para la eficiente gestión de liquidaciones de contrato, resolución de controversias y valoración precisa de activos inmobiliarios.</p>
-            </div>
-            <div class="doc-card" style="border-left-color: var(--azul-principal); margin-top: 15px;">
-                <h4>👁️ Visión</h4>
-                <p>Ser la plataforma y firma consultora de referencia nacional en contratación pública, liquidación de obras y peritajes técnicos.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- SERVICIOS -->
-<section id="servicios" class="section-padding" style="background-color: #edf2f7;">
-    <div class="container">
-        <h2 class="section-title">Nuestros Servicios Especializados</h2>
-        <p class="section-subtitle">Soluciones técnicas a la medida de contratistas y entidades del Estado</p>
-        
-        <div class="services-grid">
-            <div class="card">
-                <h3>📜 Consultoría en Liquidación de Obras</h3>
-                <p>Elaboración y revisión técnico-financiera de expedientes de liquidación de contratos de obra pública y privada conforme a norma aplicable.</p>
-            </div>
-            <div class="card">
-                <h3>📊 Reajustes, GG y Penalidades</h3>
-                <p>Cálculo preciso de fórmulas polinómicas, reajustes K, cálculo de mayores gastos generales acreditados o variables, adicionales, deductivos, amortizaciones e intereses legales.</p>
-            </div>
-            <div class="card">
-                <h3>🏛️ Tasaciones Inmobiliarias</h3>
-                <p>Valuación comercial y reglamentaria de inmuebles, terrenos, infraestructura, expropiaciones, servidumbres e inventarios físicos de obras para entidades y privados.</p>
-            </div>
-            <div class="card">
-                <h3>⚖️ Peritajes Técnicos y Arbitraje</h3>
-                <p>Elaboración de informes periciales técnicos para controversias, Junta de Prevención y Resolución de Disputas (JPRD), conciliaciones y procesos arbitrales.</p>
-            </div>
-            <div class="card">
-                <h3>🎓 Capacitación y Asesoría Legal-Técnica</h3>
-                <p>Análisis comparativo y aplicación práctica de la Ley N.° 32069, Ley N.° 30225, reglamentos anteriores, opiniones del OECE y criterios jurisprudenciales.</p>
-            </div>
+          <h3>
+            Experiencia y Rigor Técnico al Servicio de sus Proyectos
+          </h3>
+
+          <p>
+            En <strong>Mundo Liquidación de Obras</strong> brindamos servicios
+            integrales de consultoría, peritajes, valorizaciones, reajustes,
+            liquidaciones y tasaciones inmobiliarias en todo el Perú.
+          </p>
+
+          <p>
+            Contamos con un dominio exhaustivo del marco normativo vigente
+            (Ley N.° 32069) y marcos normativos históricos de Contrataciones
+            del Estado (Ley N.° 30225 y sus reglamentos), asegurando soluciones
+            sólidas ante entidades públicas, contratistas, JPRD y tribunales
+            arbitrales.
+          </p>
+
         </div>
 
-        <!-- Bloque de Métricas -->
-        <div class="features">
-            <div class="feature-item">
-                <h4>Marco Normativo</h4>
-                <p>Ley N.° 32069, N.° 30225 y reglamentos</p>
-            </div>
-            <div class="feature-item">
-                <h4>Tasaciones</h4>
-                <p>Valuación Comercial y Reglamentaria</p>
-            </div>
-            <div class="feature-item">
-                <h4>Peritajes</h4>
-                <p>Soporte en Controversias y Arbitrajes</p>
-            </div>
-        </div>
-    </div>
-</section>
+        <div class="mision-vision">
 
-<!-- BIBLIOTECA TÉCNICA -->
-<section id="biblioteca" class="section-padding container">
-    <h2 class="section-title">Biblioteca Técnica</h2>
-    <p class="section-subtitle">Documentos, normas y formatos de consulta frecuente</p>
+          <div class="info-card">
 
-    <div class="biblioteca-grid">
-        <div class="doc-card">
-            <h4>📜 Ley N.° 32069</h4>
-            <p>Nueva Ley de Contrataciones del Estado y sus disposiciones clave para obras públicas.</p>
-            <a href="https://wa.me/51966630042?text=Solicito%20información%20sobre%20Ley%2032069" class="btn-doc" target="_blank">Consultar Documento →</a>
-        </div>
-        <div class="doc-card">
-            <h4>📘 Ley N.° 30225 y Reglamento</h4>
-            <p>Compendio normativo anterior aplicable a contratos en ejecución y liquidación.</p>
-            <a href="https://wa.me/51966630042?text=Solicito%20normativa%20Ley%2030225" class="btn-doc" target="_blank">Consultar Documento →</a>
-        </div>
-        <div class="doc-card">
-            <h4>📊 Formatos de Liquidación</h4>
-            <p>Modelos y hojas de cálculo para reajustes, fórmulas polinómicas y mayores gastos generales.</p>
-            <a href="https://wa.me/51966630042?text=Solicito%20formatos%20de%20liquidación" class="btn-doc" target="_blank">Solicitar Formatos →</a>
-        </div>
-        <div class="doc-card">
-            <h4>🏠 Reglamento Nacional de Tasaciones</h4>
-            <p>Criterios técnicos oficiales para la valuación de predios urbanos y rústicos.</p>
-            <a href="https://wa.me/51966630042?text=Solicito%20información%20de%20Tasaciones" class="btn-doc" target="_blank">Consultar Norma →</a>
-        </div>
-    </div>
-</section>
+            <h3>🎯 Misión</h3>
 
-<!-- Botón Flotante de WhatsApp -->
-<a href="https://wa.me/51966630042?text=Hola,%20deseo%20información%20sobre%20sus%20servicios" class="btn-whatsapp" target="_blank">
+            <p>
+              Ofrecer soporte técnico-legal riguroso para la eficiente gestión
+              de liquidaciones de contrato, resolución de controversias y
+              valoración precisa de activos inmobiliarios.
+            </p>
+
+          </div>
+
+          <div class="info-card vision">
+
+            <h3>👁️ Visión</h3>
+
+            <p>
+              Ser la plataforma y firma consultora de referencia nacional en
+              contratación pública, liquidación de obras y peritajes técnicos.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICIOS
+    ========================= -->
+
+    <section id="servicios">
+
+      <div class="section-title">
+
+        <h2>Nuestros Servicios Especializados</h2>
+
+        <p>
+          Soluciones técnicas a la medida de contratistas y entidades del Estado
+        </p>
+
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card">
+
+          <div class="service-icon">📜</div>
+
+          <h3>
+            Consultoría en Liquidación de Obras
+          </h3>
+
+          <p>
+            Elaboración y revisión técnico-financiera de expedientes de
+            liquidación de contratos de obra pública y privada conforme
+            a norma aplicable.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">📊</div>
+
+          <h3>
+            Reajustes, GG y Penalidades
+          </h3>
+
+          <p>
+            Cálculo preciso de fórmulas polinómicas, reajustes K, cálculo
+            de mayores gastos generales acreditados o variables, adicionales,
+            deductivos, amortizaciones e intereses legales.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">🏛️</div>
+
+          <h3>
+            Tasaciones Inmobiliarias
+          </h3>
+
+          <p>
+            Valuación comercial y reglamentaria de inmuebles, terrenos,
+            infraestructura, expropiaciones, servidumbres e inventarios
+            físicos de obras para entidades y privados.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">⚖️</div>
+
+          <h3>
+            Peritajes Técnicos y Arbitraje
+          </h3>
+
+          <p>
+            Elaboración de informes periciales técnicos para controversias,
+            Junta de Prevención y Resolución de Disputas (JPRD),
+            conciliaciones y procesos arbitrales.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">🎓</div>
+
+          <h3>
+            Capacitación y Asesoría Legal-Técnica
+          </h3>
+
+          <p>
+            Análisis comparativo y aplicación práctica de la Ley N.° 32069,
+            Ley N.° 30225, reglamentos anteriores, opiniones del OECE
+            y criterios jurisprudenciales.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <!-- MARCO NORMATIVO -->
+
+      <div class="normativa">
+
+        <div class="normativa-item">
+          <h3>Marco Normativo</h3>
+          <p>Ley N.° 32069, N.° 30225 y reglamentos</p>
+        </div>
+
+        <div class="normativa-item">
+          <h3>Tasaciones</h3>
+          <p>Valuación Comercial y Reglamentaria</p>
+        </div>
+
+        <div class="normativa-item">
+          <h3>Peritajes</h3>
+          <p>Soporte en Controversias y Arbitrajes</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         BIBLIOTECA
+    ========================= -->
+
+    <section id="biblioteca">
+
+      <div class="section-title">
+
+        <h2>Biblioteca Técnica</h2>
+
+        <p>
+          Documentos, normas y formatos de consulta frecuente
+        </p>
+
+      </div>
+
+      <div class="library-grid">
+
+        <article class="library-card">
+
+          <h3>📜 Ley N.° 32069</h3>
+
+          <p>
+            Nueva Ley de Contrataciones del Estado y sus disposiciones
+            clave para obras públicas.
+          </p>
+
+          <a href="#" class="library-link">
+            Consultar Documento →
+          </a>
+
+        </article>
+
+
+        <article class="library-card">
+
+          <h3>📘 Ley N.° 30225 y Reglamento</h3>
+
+          <p>
+            Compendio normativo anterior aplicable a contratos en ejecución
+            y liquidación.
+          </p>
+
+          <a href="#" class="library-link">
+            Consultar Documento →
+          </a>
+
+        </article>
+
+
+        <article class="library-card">
+
+          <h3>📊 Formatos de Liquidación</h3>
+
+          <p>
+            Modelos y hojas de cálculo para reajustes, fórmulas polinómicas
+            y mayores gastos generales.
+          </p>
+
+          <a
+            href="https://wa.me/51966630042?text=Hola%2C%20quisiera%20solicitar%20los%20formatos%20de%20liquidaci%C3%B3n."
+            target="_blank"
+            class="library-link"
+          >
+            Solicitar Formatos →
+          </a>
+
+        </article>
+
+
+        <article class="library-card">
+
+          <h3>🏠 Reglamento Nacional de Tasaciones</h3>
+
+          <p>
+            Criterios técnicos oficiales para la valuación de predios
+            urbanos y rústicos.
+          </p>
+
+          <a href="#" class="library-link">
+            Consultar Norma →
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================= -->
+
+    <section id="contacto">
+
+      <div class="section-title">
+
+        <h2>¿Necesita asesoría especializada?</h2>
+
+        <p>
+          Estamos listos para analizar su proyecto, expediente o controversia.
+        </p>
+
+      </div>
+
+      <div class="contact-info">
+
+        <p>
+          Comuníquese con nosotros para recibir orientación técnica y
+          legal especializada.
+        </p>
+
+        <a
+          href="https://wa.me/51966630042"
+          target="_blank"
+          class="btn-principal"
+        >
+          💬 Contactar por WhatsApp
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    © 2026 Mundo Liquidación de Obras.
+    Correo: mundoliquidaciondeobras@gmail.com
+    | WhatsApp: +51 966 630 042
+
+  </footer>
+
+
+  <!-- =========================
+       WHATSAPP FLOTANTE
+  ========================= -->
+
+  <a
+    href="https://wa.me/51966630042"
+    target="_blank"
+    class="whatsapp-float"
+    aria-label="Contactar por WhatsApp"
+  >
     💬 WhatsApp
-</a>
+  </a>
 
-<!-- Footer -->
-<footer>
-    <p>© 2026 Mundo Liquidación de Obras. Correo: mundoliquidaciondeobras@gmail.com | WhatsApp: +51 966 630 042</p>
-</footer>
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+    function toggleMenu() {
+
+      const navMenu = document.getElementById("navMenu");
+
+      navMenu.classList.toggle("active");
+
+    }
+
+
+    document.querySelectorAll(".nav-menu a").forEach(function(link) {
+
+      link.addEventListener("click", function() {
+
+        document.getElementById("navMenu").classList.remove("active");
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
