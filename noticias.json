@@ -1,20 +1,4 @@
 {
-  "noticias": [
-    {
-      "titulo": "Noticias de contratación pública",
-      "categoria": "Contratación Pública",
-      "resumen": "Consulta las últimas novedades y actualizaciones relacionadas con las contrataciones públicas y la ejecución de obras.",
-      "fecha": "2026-08-01",
-      "fuente": "OECE",
-      "url": "https://www.gob.pe/oece"
-    },
-    {
-      "titulo": "Novedades sobre inversión pública",
-      "categoria": "Obras Públicas",
-      "resumen": "Información y novedades relacionadas con la inversión pública y la ejecución de proyectos de infraestructura.",
-      "fecha": "2026-08-01",
-      "fuente": "MEF",
-      "url": "https://www.gob.pe/mef"
-    }
-  ]
+  "actualizado": "",
+  "noticias": []
 }
